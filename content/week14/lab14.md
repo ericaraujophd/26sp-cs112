@@ -12,7 +12,7 @@ In this exercise, you will:
 
 ## Step 0
 
-[Accept the Assignment.]()
+[Accept the Assignment.](https://classroom.github.com/a/qw-WBNMy)
 
 Our hash table will be a STL vector of STL sets (in class we used a vector of linked lists). Your code will read a file, **dictionary.txt**, that contains "all" the words in the English language, and insert each word into the hash table. There are about \~127,000 words in the file, but we will use a fairly small number of buckets, so there will be many collisions.
 
@@ -22,7 +22,7 @@ The goal of this exercise is to experiment with hashing algorithms to see if you
 
 Inspect the code in **HashTable.h** and **HashTable.cpp**. There is not much there, but it is a start. Do notice that there is a static constant integer called `TABLE_SIZE`, initialized to the value 200.
 
-Create the hash table data structure in the **private:** section, calling it `myTable`. For this project, the table must be a vector of sets of strings (in class we used a vector of lists).
+Create the hash table data structure in the **private:** section, calling it `myTable`. For this project, the table must be a vector of **sets** of strings (in class we used a vector of lists, not a vector of sets).
 
 In the constructor, initialize `myTable` to have `TABLE_SIZE` buckets by calling
 
@@ -60,7 +60,7 @@ Notice that there is a method called `dumpInfo()` defined, but currently the cod
 - Count and print the number of empty buckets.
 - Calculate and print the average number of items in non-empty buckets.
 
-Here is a snippet of my output. Make your output look similar:
+Here is a snippet of my output. Make your output labels match exactly (for autograding). That is, match "number of items in bucket <digits>:", "Total number of elements in the hash table:", "Number of empty buckets:", and "Average number of items in non-empty buckets:"
 
 ``` bash
 number of items in bucket 0: 415
@@ -104,7 +104,7 @@ Write a comment in your `hash()` function that describes your algorithm, explain
 
 ## Step 6: Submit
 
-Submit your code via github, as normal.
+Submit your code via github, as normal. Autograder tests will run when submitted to check some basic outputs. See the grading rubric for the specific hash functions tests that will be looked for. You can additionally run `make test` in your terminal to test locally.
 
 ```{warning}
 IF YOU WORKED WITH A PARTNER, ONLY ONE OF YOU HAS TO SUBMIT, but UPDATE THE README.md to INCLUDE BOTH NAMES.
@@ -116,7 +116,10 @@ IF YOU WORKED WITH A PARTNER, ONLY ONE OF YOU HAS TO SUBMIT, but UPDATE THE READ
 
 - 10 pts: hash table code (not including the hash function) is correct
 - 5 pts: hash function obeys the criteria laid out in class.
-- 3 pts: hash function works well (not obviously leaving many buckets empty and have some be very full).
+- 3 pts: hash function works well 
+     -- less than 30 empty buckets (ideal is under 10!)
+     -- no more than 5000 in a bucket
+     -- average is less than 850 per bucket
 - 2 pts: code is clean and hospitable.
 
 Ways students lost points in the past:
