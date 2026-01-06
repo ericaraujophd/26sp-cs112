@@ -2,10 +2,10 @@
 
 CS112 is organized by **week**, with each week structured as follows:
 
-- Classroom sessions are Monday-Wednesday-Friday at **SB382**.
-  - **Section A** meets at 12:15 pm
-  - **Section B** meets at 1:30 pm
-- Prof. Araújo lectures' codes are [available in here](https://github.com/ericaraujophd/25fa-cs112-live-coding)
+- Classroom sessions are Monday-Wednesday-Friday at **SB372**.
+  - **Section A** meets at 11:00 am
+  - **Section B** meets at 12:15 pm
+- Prof. Norman's lectures' code will be [available in here](https://github.com/ericaraujophd/25fa-cs112-live-coding)
 - The **Lab Sessions** are on Tuesdays.
 - Your **Lab submission** is due Thursday at 23:59.
 - Your **Project submission** is due the next Monday at 23:59 (the night before your next lab).
@@ -32,7 +32,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
   <tbody>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">0</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">1-Sep</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">21 Jan</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Intro to C++, compilation, Data Types (including pointers), const, binary and hexadecimal, arrays, using cout/cin.</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -40,7 +40,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">1</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8-Sep</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">26 Jan</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Control Structures, Functions, Parameter Passing modes.</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -48,7 +48,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">2</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">15-Sep</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">2 Feb</td>
       <td style="border: 1px solid #ddd; padding: 8px;">File Input/Output, Exception Handling, Two-dimensional Arrays.</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -56,7 +56,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">3</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">22-Sep</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">9 Feb</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Classes, Operator Overloading, etc.</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -64,7 +64,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">4</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">29-Sep</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">16 Feb</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Vectors – Dynamic Arrays</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -72,7 +72,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">5</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">6-Oct</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">23 Feb</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Generic Containers</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
@@ -80,75 +80,67 @@ The readings for this course are from [C++ for Python Programmers Book](https://
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">6</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">13-Oct</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Linked Lists, Dynamic Array or Linked List</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">2 Mar</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Linked Lists; Dynamic Array or Linked List</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
       <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 2: Weeks 0 - 5, Wednesday</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">7</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">20-Oct</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Fall Break + Advising Days</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">16 Mar</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Algorithm Analysis and Big-Oh</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
       <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">27-Oct</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Algorithm Analysis and Big-Oh</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;"></td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">9</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">3-Nov</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">23 Mar</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Stacks and Queues</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Week of Grace Hopper</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Advising Days on W, Th</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">9</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">30 Mar</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Recursion; BSTs</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">10</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">10-Nov</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Recursion</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 3: Weeks 0 - 9, Friday</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">11</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">17-Nov</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8 Apr</td>
       <td style="border: 1px solid #ddd; padding: 8px;">BSTs</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Good Friday on F; 💯 Test 3: Weeks 0 - 9, Wednesday</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">11</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">13 Apr</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">AVL Trees and Multiprocessing</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Easter Monday break</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">12</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">24-Nov</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">AVL Trees and Multiprocessing</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Thanksgiving Break – no class 26-28</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">13</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">1-Dec</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">20 Apr</td>
       <td style="border: 1px solid #ddd; padding: 8px;">STL set and map containers</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 4: Weeks 0 - 12, Friday</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">14</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8-Dec</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">13</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">27 Apr</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Hash Tables, Sorting Algorithms</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
-      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 4: Weeks 0 - 12, Friday</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Final</td>
@@ -163,7 +155,6 @@ The readings for this course are from [C++ for Python Programmers Book](https://
 
 ## Notes
 
-* Lab and project numbers correspond to the week number
-* Tests are typically given on Fridays
-* Check calvin.edu for the exact final exam schedule
-* Grace Hopper week may affect the normal schedule
+- Lab and project numbers correspond to the week number
+- Tests are typically given on Fridays -- but not always.
+- Check calvin.edu for the exact final exam schedule

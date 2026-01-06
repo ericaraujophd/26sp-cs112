@@ -1,7 +1,6 @@
 # Welcome to Data Structures
 
-CS112 uses the **C++** programming language to introduce students to the elementary data structures (vectors, lists, stacks, queues, binary search trees, ...), recursion, big-oh notation, and other intermediate-level programming topics.
-
+CS112 uses the **C++** programming language to introduce students to elementary data structures (vectors, lists, stacks, queues, binary search trees, and so on), recursion, big-oh notation, and other intermediate-level programming topics.
 
 ```{figure} figures/real_programmers.png
 ---
@@ -10,19 +9,20 @@ name: real_programmers
 Real Programmers. Source: [xkcd.com/378](https://xkcd.com/378/)
 ```
 
-This a permanently in construction website, so please [let us know](mailto:eric.araujo@calvin.edu) if you find any information missing or had some bad experience with the links and interface throughout the semester.
+This is a permanently-under-construction website, so please [let us know](mailto:victor.norman@calvin.edu) if you find any information missing or have some bad experience with the links and interface throughout the semester.
 
 :::{admonition} Live Coding Repository
 :class: warning
-All the codes created in class (aka live coding) are available in the [GitHub repository](https://github.com/ericaraujophd/25fa-cs112-live-coding).
+All the code created in class (via live coding) will be available in this [GitHub repository](https://github.com/ericaraujophd/26sp-cs112-live-coding).
 :::
 
 ## Instructors
 
-| Instructor | Email | Office Hours |
-|------------|-------|-------------|
-| Prof. Eric Araújo | eric.araujo@calvin.edu | [Schedule](https://outlook.office365.com/calendar/published/c0bd07a3f1d64aaf9a74c91921ce7536@calvin.edu/79189cd730424803bceba861959c7e752179000899390454025/calendar.html) |
-| Prof. Christopher Wieringa | chris.wieringa@calvin.edu | [Schedule]() |
+| Instructor          | Email                    | Office Hours                                                                                                                                                               |
+| ------------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Prof. Victor Norman | victor.norman@calvin.edu | [Schedule](https://vtn2webpage.web.app)                                                                                                                                    |
+| Prof. Eric Araújo   | eric.araujo@calvin.edu   | [Schedule](https://outlook.office365.com/calendar/published/c0bd07a3f1d64aaf9a74c91921ce7536@calvin.edu/79189cd730424803bceba861959c7e752179000899390454025/calendar.html) |
+| ()                  |
 
 ## Student Learning Outcomes
 
@@ -43,7 +43,7 @@ The course is organized around these components:
 3. The projects in which students will (individually) practice using and building data structures.
 
 Each week's lectures, labs and projects will cover the same concepts, but will do so in different ways.
- 
+
 ## Computer Science & Data Study Sessions and Tutoring
 
 This class has a Study Session as part of your formula for success: **Attend class + Utilize Professor Office Hours + Attend Study Sessions = Best Practices for Successful Students!**

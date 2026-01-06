@@ -4,10 +4,11 @@ This section outlines the key policies and expectations for CS112 - Data Structu
 
 ## What's Covered
 
-The course policies are organized into four main areas:
+The course policies are organized into three main areas:
 
 <!-- - **Content**: Course structure, materials, and learning expectations -->
-- **Grading**: Assessment methods, grade distribution, and evaluation criteria  
+
+- **Grading**: Assessment methods, grade distribution, and evaluation criteria
 - **Honesty**: Academic integrity standards and collaboration guidelines
 - **Classroom**: Attendance, participation, and classroom conduct
 

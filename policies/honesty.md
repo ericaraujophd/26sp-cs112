@@ -1,8 +1,8 @@
 # Honesty
 
-Laboratory exercises are to be done in pairs, using pair programming. One copy of the assignment will be submitted for grading. Unless specified otherwise, exams, homework assignments, and projects are to be done individually, and must consist of your own original work. 
+Laboratory exercises are to be done in pairs, using pair programming. One copy of the assignment will be submitted for grading. Unless specified otherwise, exams, homework assignments, and projects are to be done individually, and must consist of your own original work.
 
-Submitting another student's work as your own (even with their knowledge) is **academic fraud**; and any detected duplication of work will be dealt with in accordance with Calvin's policies on Academic Honesty. Likewise, giving another person your work to submit as their own constitutes academic fraud and may result in a failing grade (F) for both parties.
+Submitting another student's work as your own (even with their knowledge) is **academic fraud**; and any detected duplication of work will be dealt with in accordance with Calvin's policies on Academic Honesty. Likewise, giving another person your work which they then submit as their own constitutes academic fraud and may result in a failing grade (F) for both parties.
 
 Feel free to discuss ideas with us or with your classmates, but don’t copy code (i.e., plagiarize). Here are examples of what **plagiarism** looks like:
 
