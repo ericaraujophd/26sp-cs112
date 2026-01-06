@@ -27,7 +27,6 @@ This repository contains the course materials built as a Jupyter Book website.
 
 ## Prerequisites
 
-- CS 111 or equivalent programming experience in C++
 - Understanding of basic programming concepts
 
 ## Programming Language
@@ -37,25 +36,27 @@ This repository contains the course materials built as a Jupyter Book website.
 ## Course Structure
 
 The course is organized into weekly modules (Week 0-14) plus a final exam period. Each week includes:
+
 - Student Learning Objectives (SLOs)
 - Readings and resources
 - Laboratory assignments
 - Programming projects
 - Periodic tests
+- Daily quizzes
 
 ## Assessment
 
-| Component | Weight |
-|-----------|--------|
-| Laboratory Assignments | 30% |
-| Programming Projects | 35% |
-| Tests (4 tests) | 30% |
-| Class Participation | 5% |
+| Component              | Weight |
+| ---------------------- | ------ |
+| Laboratory Assignments | 30%    |
+| Programming Projects   | 35%    |
+| Tests (4 tests)        | 30%    |
+| Class Participation    | 5%     |
 
 ### Test Schedule
 
 - Test 1: Weeks 0-2 (Friday)
-- Test 2: Weeks 0-5 (Friday)  
+- Test 2: Weeks 0-5 (Friday)
 - Test 3: Weeks 0-9 (Friday)
 - Test 4: Weeks 0-12 (Friday)
 - Final Exam: Cumulative (during exam period)
@@ -65,15 +66,18 @@ The course is organized into weekly modules (Week 0-14) plus a final exam period
 This course website is built using Jupyter Book. To build and preview the site locally:
 
 ### Prerequisites
+
 - Python 3.7+
 - pip
 
 ### Installation
+
 ```bash
 pip install jupyter-book
 ```
 
 ### Building the Book
+
 ```bash
 # Build the book
 jupyter-book build .
@@ -83,9 +87,11 @@ jupyter-book clean .
 ```
 
 ### Preview the Site
+
 After building, open `_build/html/index.html` in your web browser to preview the site locally.
 
 ### Publishing
+
 The site can be published to GitHub Pages or other hosting platforms. See the [Jupyter Book documentation](https://jupyterbook.org/publish/gh-pages.html) for deployment instructions.
 
 ## Repository Structure
@@ -111,11 +117,12 @@ The site can be published to GitHub Pages or other hosting platforms. See the [J
 ## Contributing
 
 If you find errors or have suggestions for improvements, please:
+
 1. Create an issue describing the problem
 2. Fork the repository and make your changes
 3. Submit a pull request
 
 ---
 
-Fall 2025 - CS 112 Data Structures Course Materials  
+Fall 2025 - CS 112 Data Structures Course Materials
 Last updated: August 7, 2025
