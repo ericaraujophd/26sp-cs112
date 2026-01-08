@@ -19,7 +19,7 @@ For a given operation and several values of $n$, our basic methodology will be t
 
 ## Getting Started
 
-[Accept the invitation](https://classroom.github.com/a/IoDoOh2Z) to the lab and do `git clone` to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
+[Accept the invitation](https://classroom.github.com/a/di1sHSh9) to the lab and do `git clone` to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
 
 ```{important}
 There is no autograder configuration for this lab, so don't freak out if you don't see the green mark when you commit and push your files to github.
@@ -67,7 +67,7 @@ In your **makefile**, replace **Experiment0.cpp** with **Experiment1.cpp** on th
 
 Recompile your project (`make all`) and run `./lab8`. As you can see, `Experiment1` contains code to time how long it takes to append a value to a vector. It does this two ways:
 
-1. It first invokes `timeAppendToVectorOfSize(n)` for varying values of *n*.
+1. It first invokes `timeAppendToVectorOfSize(n)` for varying values of _n_.
 2. It then uses `timeRepeatedAppendUntilVectorIsSize(n)` to measure the average time an append operation takes as a vector grows very large.
 
 Our `timeAppendToVectorOfSize(n)` method uses an approach similar to that of `Experiment0`, but timing how long it takes the vector `push_back(item)` method to append a single value. By contrast, our `timeRepeatedAppendUntilVectorIsSize(n)` starts with an empty vector and then times the average length of time to append a value, as `push_back()` is called repeatedly.
@@ -89,7 +89,7 @@ Study your chart. Using it and the data in your spreadsheet, answer the followin
 
 ## Experiment 2: Vector & List Prepending
 
-Our final experiment is to compare how long it takes to prepend an item to a *vector*, compared to a *list*.
+Our final experiment is to compare how long it takes to prepend an item to a _vector_, compared to a _list_.
 
 In **main.cpp**, comment out the lines referring to `Experiment1` and uncomment the lines referring to `Experiment2`. In the **makefile**, change `SOURCES` to `Experiment2.cpp` (line 4).
 

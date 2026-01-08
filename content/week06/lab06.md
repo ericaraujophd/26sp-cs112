@@ -14,11 +14,11 @@ In this exercise, you will:
 
 In this week's lab you will add more functionality to the List class we built in class.
 
-[Here is the invite](https://classroom.github.com/a/q_TYUiif).
+[Here is the invite](https://classroom.github.com/a/5XSzmw4g).
 
 Use git clone to get your copy of the assignment, as we have been doing. You should have these files: **List.cpp**, **List.h**, **tests.cpp**, plus a **makefile**, etc.
 
-If you are working with a partner, make sure you join the same Team when creating your repos. Also, put both your names in the *README.md* file now.
+If you are working with a partner, make sure you join the same Team when creating your repos. Also, put both your names in the _README.md_ file now.
 
 ## Step 1. Append
 

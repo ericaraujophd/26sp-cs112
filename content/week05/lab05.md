@@ -12,10 +12,12 @@ In this exercise, you will:
 
 ## Set up
 
-1. Click [this link](https://classroom.github.com/a/OPNGA2Kg) and then "Accept this assignment".
-  - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
-  - Click the link to see your new repo on github.com.
-  - Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
+1. Click [this link](https://classroom.github.com/a/0pyt0v8A) and then "Accept this assignment".
+
+- Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
+- Click the link to see your new repo on github.com.
+- Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
+
 2. In a terminal,
    - `cd` to the directory where you are putting all your CS112 assignments.
    - type `git clone paste-the-contents-of-the-link-you-copied`
@@ -31,13 +33,13 @@ Make sure you and your partner are in the same Team. Edit `README.md` and put yo
 
 In last week's exercise, we built a simple but useful vector class named `Vec`, that stored real (i.e., double) values. To make it easy to change the type of items stored in our Vec, we used a typedef of the form:
 
-``` cpp
+```cpp
 typedef double Item;
 ```
 
 We then meticulously used the name `Item` everywhere we would have used the type double. By doing so, a user wanting to use a vector of integers could just modify the typedef:
 
-``` cpp
+```cpp
 typedef int Item;
 ```
 
@@ -51,7 +53,7 @@ The tests in the provided **tests.cpp** have **not** been revised to use a **Vec
 
 As its name suggests, a **class template** is a plan or blueprint from which the compiler can build a class. Once we have converted our Vec class into a `Vec<Item>` template, a user of the class will be able to write:
 
-``` cpp
+```cpp
 Vec<int> v1;
 Vec<double> v2;
 Vec<string> v3;
@@ -71,7 +73,7 @@ With that as our introduction, let's get on with turning our Vec class into a `V
 
 The first step in converting a class into a class template is to **delete the typedef declaration** we used previously -- so remove the line defining `Item` as a double. In its place, we place the phrase `template<class Item>` immediately before the class declaration:
 
-``` cpp
+```cpp
 template <class Item>
 class Vec {
        ...
@@ -118,7 +120,7 @@ Our test-driven procedure will be to: (don't do this yet — just read the steps
 4. Compile and run the tester.
 5. If any errors are reported, find and fix them;
 
-    Otherwise, return to step 1.
+   Otherwise, return to step 1.
 
 Converting a method definition (step 3) to a method-template is fairly simple:
 
@@ -208,7 +210,7 @@ Then, one untested method at a time:
 3. Uncomment the call to that test.
 4. Compile and run the test. When it passes the test, continue to the next untested method.
 
-By using this *methodical* approach (Ha, ha! Get it?!?), any compilation errors that occur should be confined to the newly uncommented method-template. This will make it easier and faster for you to find and fix the errors.
+By using this _methodical_ approach (Ha, ha! Get it?!?), any compilation errors that occur should be confined to the newly uncommented method-template. This will make it easier and faster for you to find and fix the errors.
 
 Use this approach to complete the conversion of class `Vec` to the `template Vec<Item>`.
 
@@ -271,15 +273,15 @@ Now, implement the feature. You'll have to alter `getValue()`, `setValue()`, and
 
 Here is a summary of `validate_index()`:
 
-| **Method** | **Parameters** | **Notes** |
-|----|----|----|
-| validate_index() | int index | The purpose of this function is to convert what would be a legal python index into a legal C++ index.<br><br>Make note, does this method change anything in our class? If it doesn’t, should we make this a const function?<br><br>**Algorithm:** <br><br>- If the index is \>= n, throw a range_error exception. <br>- If the index is \< -n, throw a range_error exception. <br><br>Convert the index to be between 0 and n-1 if necessary. Return the index back. |
+| **Method**       | **Parameters** | **Notes**                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| validate_index() | int index      | The purpose of this function is to convert what would be a legal python index into a legal C++ index.<br><br>Make note, does this method change anything in our class? If it doesn’t, should we make this a const function?<br><br>**Algorithm:** <br><br>- If the index is \>= n, throw a range_error exception. <br>- If the index is \< -n, throw a range_error exception. <br><br>Convert the index to be between 0 and n-1 if necessary. Return the index back. |
 
 Finally, implement a `find()` method as described below:
 
-| **Method** | **Parameters** | **Notes** |
-|----|----|----|
-| find() | an `Item` to search for | If the item is found in the array, return the index. Otherwise, return -1. |
+| **Method** | **Parameters**          | **Notes**                                                                  |
+| ---------- | ----------------------- | -------------------------------------------------------------------------- |
+| find()     | an `Item` to search for | If the item is found in the array, return the index. Otherwise, return -1. |
 
 First, add a `SECTION("find")` to the "PyLists" TEST_CASE in **tests.cpp** to test the find command. You'll want to make sure you try to find items that are in a PyList and items that are not in the list. You should also make sure that if an `Item` is in a list more than one time, the index of the first item is returned.
 

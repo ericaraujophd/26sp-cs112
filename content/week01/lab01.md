@@ -1,7 +1,7 @@
 ---
 title: Lab 01
 subtitle: Control Structures
-date: 2025-09-09
+date: 27 Jan 2026
 ---
 
 ## Objectives
@@ -16,7 +16,7 @@ date: 2025-09-09
 Find a partner before starting!
 ```
 
-- Click [the link](https://classroom.github.com/a/ev2aMEzr) and then **Accept this assignment**.
+- Click [the link](https://classroom.github.com/a/Ma_rL89v) and then **Accept this assignment**.
   - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
   - Click the link to see your new repo on github.com.
   - Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
@@ -31,14 +31,14 @@ Find a partner before starting!
   - Run the program: type `./tester`.
   - You should get some basic output — or at least it should not crash.
 
-## Step 1. *if* statement practice, 1
+## Step 1. _if_ statement practice, 1
 
 In **functions.cpp** in the `grade()` function, add code that
 
 1. prints "Enter your grade: "
 2. reads in an **unsigned** value from the user
 3. computes whether the letter grade (a **char**) is an A, B, C, D, or F. An A is 90 or above, a B is 80 - 89, etc.
-4. prints out the grade saying "Your grade is *grade*.".
+4. prints out the grade saying "Your grade is _grade_.".
 
 Compile your program by typing `make` in a terminal. Run it by typing `./tester step1`. Verify that your output looks exactly like this:
 
@@ -46,7 +46,7 @@ Compile your program by typing `make` in a terminal. Run it by typing `./tester 
 Your grade is B.
 ```
 
-Now, **Commit** and **Sync** your code to github. Use "step 1 complete" as your Message. When you Commit and Sync, the automated tests will run on github. 
+Now, **Commit** and **Sync** your code to github. Use "step 1 complete" as your Message. When you Commit and Sync, the automated tests will run on github.
 
 ```{warning}
 Only the "step1" test should pass at this time. If it doesn't, fix your code, and then resubmit (use any Message you want). Repeat until the "step1" test passes.
@@ -59,10 +59,9 @@ name: commit-sync-github
 Commit and Sync your code to github.
 ```
 
-## Step 2. *if* statement practice, 2
+## Step 2. _if_ statement practice, 2
 
 Add code in **functions.cpp** in `insurance()` to implement the insurance plan shown in the table below, computing the result in as few lines as possible — but still using readable/hospitable code. To review the syntax of `if` statements in C++, you might find this useful: [C++ Conditions, else and if](https://www.w3schools.com/cpp/cpp_conditions_elseif.asp).
-
 
 ```{list-table} Cost of the plans silver and gold
 :header-rows: 1
@@ -102,7 +101,7 @@ The output should match the output above.
 
 Now, **Commit** and **Sync** your code to github. Use "step 2 complete" as your "message". When you submit the automated tests will run. Only the "step1" and "step2" tests should pass at this time. If they don't, fix your code, and then resubmit. Repeat until the "step1" and "step2" tests pass.
 
-## Step 3. *while* loop practice
+## Step 3. _while_ loop practice
 
 Improve your code from Step 2 by adding a **while** loop that checks if the user entered a legal plan name ("silver" or "gold"), and if not tells the user to try again. E.g.,
 
@@ -127,7 +126,7 @@ The output should match the output above.
 
 Now, Commit and Sync your code to github. Make sure the first 3 tests pass.
 
-## Step 4. *switch* statement
+## Step 4. _switch_ statement
 
 Now, write in code in `vowel()` that asks the user to enter a single lowercase letter. Your code must use a **switch** statement to test if the letter is a vowel or consonant. Vowels are 'a', 'e', 'i', 'o', and 'u'. We'll call 'y' a consonant for this exercise.
 
@@ -155,7 +154,7 @@ The output should match the output above.
 
 Now, Commit and Sync your code to github. Make sure the first 4 tests pass.
 
-## Step 5. *for* loop, 1
+## Step 5. _for_ loop, 1
 
 Now, write code in `sevens()`:
 
@@ -173,7 +172,7 @@ Test with:
 
 Now, Commit and Sync your code to github. Make sure the appropriate tests pass.
 
-## Step 6. *for* loop, 2
+## Step 6. _for_ loop, 2
 
 Now, write code in `sum()`:
 
@@ -203,7 +202,7 @@ Now, write code to:
 2. copy the code that gets the number of months from the user into a function called `getMonths()`. This function returns the number of months a user enters. Note that the prompt asking the user to enter the number of months should read something nice, like this:
 
 ```
-Enter the number of months: 
+Enter the number of months:
 ```
 
 3. copy the code that computes the cost into a function called `computeCost()`. This function takes the plan name and the months as arguments and returns the cost.

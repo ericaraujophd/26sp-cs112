@@ -1,6 +1,7 @@
 ---
 title: Lab 02
 subtitle: File I/O, Control Structures, and the Debugger
+date: 3 Mar 2026
 ---
 
 ## Objectives
@@ -18,7 +19,7 @@ In this exercise, you will:
 Find a partner before starting anything!
 ```
 
-1. Click [this link](https://classroom.github.com/a/TdzyCbz6) and then scroll down to choose a Team name. "Accept this assignment".
+1. Click [this link](https://classroom.github.com/a/nyshxnJo) and then scroll down to choose a Team name. "Accept this assignment".
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
@@ -31,7 +32,7 @@ Find a partner before starting anything!
 
 ## Finding duplicates in an array of integers
 
-In this assignment, you will write a short function, `findDuplicate()`, that searches an array of integers to find the first pair of duplicate values.  Please read this entire section before starting to code -- we'll do that in the next section! For our `findDuplicate()` function, if a duplicate value is found, the function returns **true**, and "returns" the duplicate value through an *Out* parameter. If no duplicate value is found, the function returns **false**.
+In this assignment, you will write a short function, `findDuplicate()`, that searches an array of integers to find the first pair of duplicate values. Please read this entire section before starting to code -- we'll do that in the next section! For our `findDuplicate()` function, if a duplicate value is found, the function returns **true**, and "returns" the duplicate value through an _Out_ parameter. If no duplicate value is found, the function returns **false**.
 
 Think about the algorithm to find a duplicate value in an array. Consider the following array:
 
@@ -67,10 +68,10 @@ In **functions.h**, write the **prototype** for your function. The prototype is 
 
 Your function is called `findDuplicate()`, has 3 parameters, and returns **bool**.
 
-| Parameter name | Parameter type | Description |
-| -------------- | -------------- | ------------------------------------ |
-| arr            | array of int   | arr of integers to search            |
-| size           | int            | size of the array                    |
+| Parameter name | Parameter type | Description                                                              |
+| -------------- | -------------- | ------------------------------------------------------------------------ |
+| arr            | array of int   | arr of integers to search                                                |
+| size           | int            | size of the array                                                        |
 | dup_value      | int &          | The out parameter containing the first duplicate value, if one is found. |
 
 The function's prototype should look like this:
@@ -81,7 +82,7 @@ bool findDuplicate(int arr[], int size, int &dup_value);
 
 That's all that you should have in your header (.h) file.
 
-In **functions.cpp**, implement your function. To repeat from above: If a duplicate value is found, the function returns **true**, and "returns" the duplicate value through the *out* parameter, **dup_value**. If no duplicate value is found, the function returns **false**. Work from your algorithm. Do your best to implement the function correctly, but don't take too much time on this, as the next steps will help you make sure your code is correct.
+In **functions.cpp**, implement your function. To repeat from above: If a duplicate value is found, the function returns **true**, and "returns" the duplicate value through the _out_ parameter, **dup_value**. If no duplicate value is found, the function returns **false**. Work from your algorithm. Do your best to implement the function correctly, but don't take too much time on this, as the next steps will help you make sure your code is correct.
 
 ## Step 2. Unit test your function
 
@@ -166,7 +167,7 @@ Debugger has stopped at the breakpoint
 ```
 
 ```{caution}
-If you saw an error when you started debugging, you might be trying to debug the wrong executable. Look at the image just above. Notice that next to the green arrow is a small menu, with a dropdown arrow. You might be trying to debug the "Debug lab2" program instead of the tester program. 
+If you saw an error when you started debugging, you might be trying to debug the wrong executable. Look at the image just above. Notice that next to the green arrow is a small menu, with a dropdown arrow. You might be trying to debug the "Debug lab2" program instead of the tester program.
 ```
 
 You know where your code has stopped because you see the yellow "arrow" overlaying the red dot. This means your code has run to this point and is stopped.

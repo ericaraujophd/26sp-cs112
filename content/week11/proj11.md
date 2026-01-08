@@ -11,7 +11,7 @@ subtitle: Binary Search Trees
 
 ## Introduction
 
-[Accept the assignment](https://classroom.github.com/a/TXyEv_U3) and use `git clone` to create your copy of the code.
+[Accept the assignment](https://classroom.github.com/a/0K0eddFV) and use `git clone` to create your copy of the code.
 
 The tasks for this project are:
 

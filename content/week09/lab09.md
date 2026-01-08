@@ -20,9 +20,8 @@ Today's exercise has two parts:
 2. In Part II, we will see how to define, throw, catch, and handle exceptions.
 3. In Part III, we will build a simple Queue class that stores its items in a linked list.
 
-
 ```{important} Getting Started
-[Accept the invitation](https://classroom.github.com/a/czdZ8EJD) to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
+[Accept the invitation](https://classroom.github.com/a/o_B_A5J5) to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
 ```
 
 ## Part I: The Stack Class
@@ -127,7 +126,7 @@ Save/compile, and verify that the linking error for `isFull()` goes away. (The e
 
 Define the `peekTop()` method. What is the return type going to be? (Note you will be returning something from myArray!) Consider also whether or not we are changing anything within the class. How do we figure out what element to return, could we use our mySize or myCapacity variables? After writing your method, Save/recompile, and verify that what you have written compiles without errors. (You should still see a linking error for `push()`.) Note that you do not have to handle the case (now) when you try to `peekTop()` on an empty Stack.
 
-Define the `push()` method. When we push to a stack, we won't be getting anything back (void return type). We are also making changes to our class, so it cannot be a const method. However, do we change the Item we are sending to the class? We should not. Do we pass the Item by value or by reference? Considering all of these, we should have a prototype that looks like this:  `void Stack::push(const Item& it)`  Consider additionally what happens when we "push" an item to our Stack. Where are we saving it into myArray? What other private variables change? Write your function, then save/recompile, and verify that what you have written compiles and links without errors. (Again, do not worry about exceptional or full cases, yet.)
+Define the `push()` method. When we push to a stack, we won't be getting anything back (void return type). We are also making changes to our class, so it cannot be a const method. However, do we change the Item we are sending to the class? We should not. Do we pass the Item by value or by reference? Considering all of these, we should have a prototype that looks like this: `void Stack::push(const Item& it)` Consider additionally what happens when we "push" an item to our Stack. Where are we saving it into myArray? What other private variables change? Write your function, then save/recompile, and verify that what you have written compiles and links without errors. (Again, do not worry about exceptional or full cases, yet.)
 
 Run the tests. If you pass the tests, congratulations! If not, use the diagrams above to go back and fix your `push()`, `peekTop()`, and/or `isFull()` methods. <!-- If you get stuck, here are hints for [push()](lab09-hint-push.md), [peekTop()](lab09-hint-peektop.md), and [isFull()](lab09-hint-isfull.md), but only use them if you have to. -->
 
@@ -135,7 +134,7 @@ Continue when your methods pass all the tests.
 
 ### The pop() Method
 
-Our sole remaining operation is the `pop()` method, that removes and returns the top value from the Stack. 
+Our sole remaining operation is the `pop()` method, that removes and returns the top value from the Stack.
 
 In **tests.cpp**, uncomment the `TEST_CASE` for `testPop()`. Compile and run the test. You should see an error message indicating that `pop()` does not exist.
 
@@ -153,7 +152,7 @@ As we have seen with the C++ standard exceptions, an **exception** is an out-of-
 
 In C++, a method that wants to indicate that something exceptional has occurred can **throw** an exception object back to the caller of the method. The pattern for the throw statement is:
 
-``` cpp
+```cpp
 throw ExceptionType(arguments);
 ```
 
@@ -161,7 +160,7 @@ This constructs an exception object of type `ExceptionType` and throws it to the
 
 Back in the caller, the call to that method can be "wrapped" in a **try-catch block**, whose form is as follows:
 
-``` cpp
+```cpp
 try {
   // risky code -- might throw an exception
 } catch (const ExceptionType & exceptionParameter) {
@@ -177,7 +176,7 @@ Note that since `ExceptionType` is pretty much always a class, it is preferable 
 
 In **tests.cpp**, uncomment the following line in `TEST_CASE "testPop()"`:
 
-``` cpp
+```cpp
 REQUIRE_THROWS_AS(s1.peekTop(), StackException);
 ```
 
@@ -196,7 +195,7 @@ The class has two instance variables:
 
 The `StackException` constructor initializes these members using values it receives through its parameters. For example, if at the beginning of the `pop()` method, we find that the stack is empty, we can build an exception like this:
 
-``` cpp
+```cpp
 StackException("pop()", "stack is empty")
 ```
 
@@ -204,7 +203,7 @@ StackException("pop()", "stack is empty")
 
 If at the beginning of the the `push()` method, we find that the stack is full, we can build an exception like this:
 
-``` cpp
+```cpp
 StackException("push()", "stack is full")
 ```
 
@@ -222,11 +221,11 @@ When your project compiles correctly, run it. You should see an execution halt i
 
 Now that we have created a `StackException` class by which we can precisely describe unusual circumstances, we can use that class in our Stack methods. As mentioned previously, a method that detects a problematic circumstance can **throw** an exception. For example, if the stack is empty, there is no top item for the `peekTop()` method to return, in which case we might make it throw a `StackException`, as follows:
 
-``` cpp
+```cpp
 Item Stack::peekTop() const {
   if (isEmpty()) {
       throw StackException("peekTop()", "stack is empty");
-  } 
+  }
   return myArray[mySize - 1];
 }
 ```

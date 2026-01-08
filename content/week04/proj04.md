@@ -11,19 +11,20 @@ subtitle: More Vec Operations
 ## Step 0. Prepare
 
 ```{important} **READ THIS:** IT IS DIFFERENT THAN NORMAL!
+
 ```
 
-1. [Click the link](https://classroom.github.com/a/_eleu71n) and then "Accept this assignment".
+1. [Click the link](FIX THIS!!!) and then "Accept this assignment".
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button and copy the link it shows.
 2. In a terminal,
-    - `cd` to the directory where you are putting all your CS112 assignments.
-    - type `git clone paste-the-contents-of-the-link-you-copied`
-    - `cd` to the new directory containing your repo.
+   - `cd` to the directory where you are putting all your CS112 assignments.
+   - type `git clone paste-the-contents-of-the-link-you-copied`
+   - `cd` to the new directory containing your repo.
 
 ```{important}
-BECAUSE your project depends on your lab code, you need to copy your lab code over to this repo. That is, you have to copy **Vec.h** and **Vec.cpp** you've implemented during Lab 04 to this repo after cloning it. 
+BECAUSE your project depends on your lab code, you need to copy your lab code over to this repo. That is, you have to copy **Vec.h** and **Vec.cpp** you've implemented during Lab 04 to this repo after cloning it.
 
 In a terminal:
 
@@ -48,13 +49,13 @@ If, at this moment in the course, you are still not able to handle directories a
 - Open your project in VS Code, and open **Vec.h**
 - Add this prototype for the assignment operator to **Vec.h**, in the public area:
 
-``` cpp
+```cpp
 Vec& operator=(const Vec& original);
 ```
 
 - Add this code to **Vec.cpp**:
 
-``` cpp
+```cpp
 Vec& Vec::operator=(const Vec& original) {
     if (this != &original) {
         if (mySize != original.mySize) {
@@ -84,7 +85,7 @@ Vec& Vec::operator=(const Vec& original) {
 
 This week's project adds more functionality to the Vec class we built in the lab. To illustrate, suppose that `v1`, `v2`, and `v3` are Vec objects containing the following values:
 
-``` cpp
+```cpp
 v1 == {1, 2, 3}
 v2 == {2, 4, 6}
 v3 == {1, 2, 3}
@@ -99,7 +100,7 @@ The subscript operator (`[i]`) can be implemented such that using subscripting o
 
 Here is the algorithm:
 
-``` cpp
+```cpp
 Item &operator[](unsigned index)
     check if index is legal. If not, throw a range_error
     return myArray[index];
@@ -119,7 +120,7 @@ The function `testConstSubscript()` can be found on line 315 in **tests.cpp**. M
 
 The expression:
 
-``` cpp
+```cpp
 v3 = v1 + v2;
 ```
 
@@ -127,7 +128,7 @@ should set `v3 == {3, 6, 9}`, without leaking memory.
 
 When C++ compiles `v1 + v2`, it looks at the types of the values that surround the `+`. It sees that `v1` is a Vec object, so it actually will call `operator+()` on the `v1` object, passing `v2` as the parameter. Thus, the prototype is
 
-``` cpp
+```cpp
 Vec Vec::operator+(const Vec &rhs) const
 ```
 
@@ -143,7 +144,7 @@ Uncomment the `TEST_CASE("addition")` in line 344 to test if your code works. Do
 
 The expression:
 
-``` cpp
+```cpp
 v3 = v1 - v2;
 ```
 
@@ -162,8 +163,8 @@ Vectors can be used to store positions (and/or directional forces) in a coordina
 1. Prompts for and has the user enter the number of dimensions in their space, storing this number in a variable N, which it can then use to define vector objects.
 2. Prompts for and has the user enter a starting position in that space, and stores that position in a vector object sum.
 3. Uses a loop that:
-    1. prompts for and has the user enter a position (relative to their current position), and stores that position in a vector,
-    2. adds that vector to the sum vector.
+   1. prompts for and has the user enter a position (relative to their current position), and stores that position in a vector,
+   2. adds that vector to the sum vector.
 4. This loop should let the user enter an arbitrary number of positions.
 5. Outputs the starting position plus the final position (i.e., the sum of the positions from the accumulator-vector).
 
@@ -198,7 +199,7 @@ To get you well on your way, your repo contains **App.cpp** and **App.h**. These
 
 Now that you have addition implemented, you'll need to uncomment the line in **App.cpp** that reads
 
-``` cpp
+```cpp
 res = res + v;
 ```
 

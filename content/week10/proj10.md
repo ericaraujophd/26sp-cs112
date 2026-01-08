@@ -15,7 +15,7 @@ From Giphy by \@hmd_global
 
 ## Step 0: Set Up
 
-[Accept the assignment](https://classroom.github.com/a/uGlXo176) and use `git clone` to create your copy of the code.
+[Accept the assignment](https://classroom.github.com/a/qjNZ6tpS) and use `git clone` to create your copy of the code.
 
 ## Step 1. Try it out
 
@@ -38,7 +38,7 @@ For our implementation, we'll use a queue to represent the body of the snake. As
 Queue<Pair<int>> snake; // (see line 58 of Snake.h)
 ```
 
-The only other kinda tricky part of the code is how we grow the snake. The screen is redrawn each frame. A variable, `skipDeletingTailNodesCount`, exists which keeps track of how many subsequent frames should *not* delete the tail of the snake. So, if the variable has the value 2, the snake will grow by two new segments, because for the next 2 frames the snake's tail will not be deleted.
+The only other kinda tricky part of the code is how we grow the snake. The screen is redrawn each frame. A variable, `skipDeletingTailNodesCount`, exists which keeps track of how many subsequent frames should _not_ delete the tail of the snake. So, if the variable has the value 2, the snake will grow by two new segments, because for the next 2 frames the snake's tail will not be deleted.
 
 ## Step 2. Your task
 
@@ -57,7 +57,7 @@ for (Queue<Pair<int>>::iterator it = snake.begin(); it != snake.end(); it++) {
 ```
 ````
 
-To run your program you have to provide two *command-line arguments*: your Bridges UserName and your Bridges Id. E.g., I run the program this way:
+To run your program you have to provide two _command-line arguments_: your Bridges UserName and your Bridges Id. E.g., I run the program this way:
 
 ```bash
 ./snake EricAraujo 123456789

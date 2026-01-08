@@ -12,7 +12,7 @@ In this exercise, you will:
 
 ## Step 0
 
-[Accept the Assignment.](https://classroom.github.com/a/qw-WBNMy)
+[Accept the Assignment.](https://classroom.github.com/a/DRNdRjZW)
 
 Our hash table will be a STL vector of STL sets (in class we used a vector of linked lists). Your code will read a file, **dictionary.txt**, that contains "all" the words in the English language, and insert each word into the hash table. There are about \~127,000 words in the file, but we will use a fairly small number of buckets, so there will be many collisions.
 
@@ -26,7 +26,7 @@ Create the hash table data structure in the **private:** section, calling it `my
 
 In the constructor, initialize `myTable` to have `TABLE_SIZE` buckets by calling
 
-``` cpp
+```cpp
 myTable.resize(TABLE_SIZE);
 ```
 
@@ -62,7 +62,7 @@ Notice that there is a method called `dumpInfo()` defined, but currently the cod
 
 Here is a snippet of my output. Make your output labels match exactly (for autograding). That is, match "number of items in bucket <digits>:", "Total number of elements in the hash table:", "Number of empty buckets:", and "Average number of items in non-empty buckets:"
 
-``` bash
+```bash
 number of items in bucket 0: 415
 number of items in bucket 1: 351
 number of items in bucket 2: 307
@@ -108,7 +108,7 @@ Submit your code via github, as normal. Autograder tests will run when submitted
 
 ```{warning}
 IF YOU WORKED WITH A PARTNER, ONLY ONE OF YOU HAS TO SUBMIT, but UPDATE THE README.md to INCLUDE BOTH NAMES.
-````
+```
 
 ## Grading Rubric
 
@@ -116,10 +116,10 @@ IF YOU WORKED WITH A PARTNER, ONLY ONE OF YOU HAS TO SUBMIT, but UPDATE THE READ
 
 - 10 pts: hash table code (not including the hash function) is correct
 - 5 pts: hash function obeys the criteria laid out in class.
-- 3 pts: hash function works well 
-     -- less than 30 empty buckets (ideal is under 10!)
-     -- no more than 5000 in a bucket
-     -- average is less than 850 per bucket
+- 3 pts: hash function works well
+  -- less than 30 empty buckets (ideal is under 10!)
+  -- no more than 5000 in a bucket
+  -- average is less than 850 per bucket
 - 2 pts: code is clean and hospitable.
 
 Ways students lost points in the past:

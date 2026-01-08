@@ -23,7 +23,7 @@ This assignment is to process the games to
 
 ## Setup
 
-Make your **proj5** repo as normal, using [this link](https://classroom.github.com/a/70PgeK0F).
+Make your **proj5** repo as normal, using [this link](https://classroom.github.com/a/UlvbgSvg).
 
 You will need to make yourself a [Bridges Account here](http://bridges-cs.herokuapp.com/signup).
 
@@ -35,7 +35,7 @@ To build your program use `make`. It produces an executable called **games**.
 You will not be able to build your program on your own machine unless you download and install the Bridges libraries and include (header) files correctly. DO NOT ask Prof. Wieringa or Prof. Araújo to help you do that. Instead, just use the machines in the lab or access your virtual machine through [Coder](https://coder.cs.calvin.edu/)!
 ```
 
-To run your program you have to provide **two command-line arguments**: your Bridges *UserName* and your Bridges *Id*. E.g., I run the program this way:
+To run your program you have to provide **two command-line arguments**: your Bridges _UserName_ and your Bridges _Id_. E.g., I run the program this way:
 
 ```bash
 ./games ericaraujo 1313148564
@@ -71,7 +71,7 @@ sort(yourvector.begin(), yourvector.end());
 
 In the starting code you received in your repo, you'll see that **main.cpp** implements a simple menu system to allow the user to choose what action to take. Your job is to fill in the code to implement those actions, and at the end, add your own option.
 
-Start by implementing the "*Show all genres*" option by creating the function `collectAllGenres()`. This function takes one parameter — the vector of Game objects — and returns a vector of strings containing all the discovered genres, in sorted order. Make sure you pass in the parameter *efficiently* (**do not** use pass-by-value).
+Start by implementing the "_Show all genres_" option by creating the function `collectAllGenres()`. This function takes one parameter — the vector of Game objects — and returns a vector of strings containing all the discovered genres, in sorted order. Make sure you pass in the parameter _efficiently_ (**do not** use pass-by-value).
 
 The function should first create a variable— I called it `all_genres` — that is a vector of strings. It will hold all the genres seen. Then, the function should loop through all the Game objects in the vector, and for each Game, loop through all genres the game belongs to. For each genre, it should search `all_genres`. If the new genre has not been seen before, add it to the end of the `all_genres` vector using `push_back()`.
 

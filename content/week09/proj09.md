@@ -5,7 +5,7 @@ subtitle: Navigate a Maze Using a Stack
 
 ## Prepare
 
-[Accept the assignment](https://classroom.github.com/a/MoyniWzt) and use git clone to create your copy of the code.
+[Accept the assignment](https://classroom.github.com/a/dp6oZBYK) and use git clone to create your copy of the code.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ FINAL PATH: (2, 3, X) (3, 3, N) (3, 2, E) (3, 1, E) (2, 1, S) (1, 1, S) (1, 0, E
 
 This maze was read from a file that looks like this:
 
-``` default
+```default
 4 5
 SX__X
 ___X_
@@ -77,21 +77,21 @@ Your main task is to implement the `readMazeFromFile()` and `isReachable()` func
 1. Define a stack of Location objects this way: `stack<Location> st;`
 2. Push a location object with values (0, 0, -1) on stack (-1 = haven't tried any direction yet)
 3. while the stack is not empty:
-    1. current_loc = top of stack
-    2. pop the stack;
-    3. if `current_loc` is the goal,
-        1. push the `current_loc` back on the stack
-        2. return!
-    4. mark the current location as true in the "visited" array.
-    5. increment `current_loc`'s direction
-    6. if `direction` is north:
-        1. if there is not a wall to the north and we haven't visited the location to the north:
-            1. push the current_location on the stack
-            2. push this new hallway on the stack
-            3. continue (to the top while loop)
-        2. else: increment `current_loc`'s direction
-    7. Repeat step f. for west, then for south, then for east.
-    8. // We must be at a dead end: nothing to do -- we already popped this dead-end node off the stack.
+   1. current_loc = top of stack
+   2. pop the stack;
+   3. if `current_loc` is the goal,
+      1. push the `current_loc` back on the stack
+      2. return!
+   4. mark the current location as true in the "visited" array.
+   5. increment `current_loc`'s direction
+   6. if `direction` is north:
+      1. if there is not a wall to the north and we haven't visited the location to the north:
+         1. push the current_location on the stack
+         2. push this new hallway on the stack
+         3. continue (to the top while loop)
+      2. else: increment `current_loc`'s direction
+   7. Repeat step f. for west, then for south, then for east.
+   8. // We must be at a dead end: nothing to do -- we already popped this dead-end node off the stack.
 
 ### Sample output
 

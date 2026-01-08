@@ -191,7 +191,7 @@ Please enter:
 
 ## Details
 
-[Accept the project assignment](https://classroom.github.com/a/1selVh_P) and use git clone to get the files.
+[Accept the project assignment](FIX THIS) and use git clone to get the files.
 
 The `CongaLine` class in **CongaLine.h** has a `List` member named `myLine`, in which it stores the names of the people currently in the dance line. Since a Conga Line needs to have at least two people, the `CongaLine` constructor has two string parameters to which we can pass two people's names, and our simulation uses this constructor to create an initial line containing "Ann" and "Bob".
 

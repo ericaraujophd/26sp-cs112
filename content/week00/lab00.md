@@ -1,9 +1,8 @@
 ---
 title: Lab 00
 subtitle: Getting Started
-date: 2025-09-02
+date: 20 Jan 2026
 ---
-
 
 ```{figure} imgs/lab00-soitbegins.gif
 :name: lab00-soitbegins
@@ -23,9 +22,9 @@ In this exercise, you will:
 
 ## 1. Introduction
 
-**Welcome to CS112!** 
+**Welcome to CS112!**
 
-In this first lab exercise, we will introduce the *Visual Studio Code* editor, and see how we can use it to write a C++ program. The exercise assumes access to a C++ compiler (e.g., GNU's gcc/g++), the make utility through the Coder system, and that [VS Code](https://code.visualstudio.com/Download) have all been installed on your system.
+In this first lab exercise, we will introduce the _Visual Studio Code_ editor, and see how we can use it to write a C++ program. The exercise assumes access to a C++ compiler (e.g., GNU's gcc/g++), the make utility through the Coder system, and that [VS Code](https://code.visualstudio.com/Download) have all been installed on your system.
 
 You should also be familiar with basic C++ principles. For that, review [1.4. Let’s look at a C++ program](https://runestone.academy/ns/books/published/cpp4python/IntroCpp/firstcppprogram.html#compilation) if you are coming into this class from CS10X and are used to Python.
 
@@ -62,25 +61,25 @@ You will have many assignments in CS112, and it is useful to put them all under 
 
 From your Coder webpage, click the Terminal Window. Then type this:
 
-``` bash
+```bash
 mkdir cs112
 ```
 
 To change your current working directory to cs112, do this:
 
-``` bash
+```bash
 cd cs112
 ```
 
 To verify what is your current directory, do this:
 
-``` bash
+```bash
 pwd
 ```
 
 You should be in the `/home/<username>/cs112` directory, where `<username>` is your own Calvin username.
 
-For this course, we will store all our code in the *cs112* directory, and it will be up to you to make a clone in your sample labs and project directories for each lab and assignment.
+For this course, we will store all our code in the _cs112_ directory, and it will be up to you to make a clone in your sample labs and project directories for each lab and assignment.
 
 :::{figure} imgs/mkdir.gif
 How to create a directory in the terminal.
@@ -98,11 +97,11 @@ As mentioned earlier, we will use **Visual Studio Code**, more commonly known as
 While we will be running the VS Code IDE on our own devices, to develop our C++ code we will connect remotely to the Calvin Linux resources offered by Coder.
 
 3. Change the Coder webpage you had open earlier. Find the "VS Code Desktop" button and click it. Open the link!
-4. When prompted to install the "Coder" extension into VS Code, accept the prompt. This adds the offical Code extension into your local VS Code software and allows a remote encrypted connection into your Calvin CS Linux resources — including the C++ compilers we need for this class.
+4. When prompted to install the "Coder" extension into VS Code, accept the prompt. This adds the offical Coder extension into your local VS Code software and allows a remote encrypted connection into your Calvin CS Linux resources — including the C++ compilers we need for this class.
 5. VS Code will attempt to connect to your Coder workspace. You will be prompted to select the platform for the remote host, so choose "Linux".
 6. Once connected, you will have an option to "Open Folder". Browse to or type the following: `/home/<username>/cs112` where `<username>` is your username. Example: `/home/jcalvin/cs112/lab00`. Click OK.
 7. If prompted to trust the authors of the files in this folder, select "Yes, I trust the authors". After all - the author is going to be you!
-8. Lastly, within VS Code, go to the Terminal menu and select "New Terminal". You should see a Terminal window appear at the bottom of your screen - identical to function as the Terminal we used on the Coder website before!
+8. Lastly, within VS Code, go to the Terminal menu and select "New Terminal". You should see a Terminal window appear at the bottom of your screen - identical to the Terminal we used on the Coder website before!
 
 At this point, you are ready to get our initial code and start coding. Continue on.
 
@@ -134,7 +133,7 @@ Click the **New SSH Key** button in the upper right. Choose a Title: CS112 works
 If you plan to work on your own machine instead of a lab machine, you will have to repeat this step on your own laptop. But, the script at `/usr/local/scripts/gen-sshkey-github.sh` will not work on your machine. Use `ssh-keygen` instead. It is available on most operating systems already.
 :::
 
---> 
+-->
 
 ### Creating a Project
 
@@ -143,7 +142,7 @@ Each lab and homework will contain a link to a **GitHub Classroom** assignment i
 When you click on the link, a repository for you will be created. The webpage will give you instructions on how to see that repository. The webpage for your repo will look something like this: `https://github.com/24SP-CS112/lab00-yourgithubteam` (Note: this URL doesn't exist! It is just an example to show you what your repo URL will look like.)
 
 :::{important}
-Click on the [invitation for this lab.](https://classroom.github.com/a/BgC81DgP)
+Click on the [invitation for this lab.](https://classroom.github.com/a/M7VndWmx)
 :::
 
 <!-- ::: callout-important
@@ -151,7 +150,7 @@ All labs are meant to be done in pairs using pair programming. That is: you **mu
 ::: -->
 
 :::{important}
-All labs are meant to be done in pairs using pair programming but this one! That is: you **must** configure your VS Code and Github individually in order to work in the other assignments.
+All labs, except this one, are meant to be done in pairs using pair programming! That is: you **must** configure your VS Code and GitHub individually in order to work on the other assignments.
 :::
 
 Go to the webpage for your repository. You will need to get the ID of the repo. To get this, you click on the button **\<\> Code**, then click on the SSH tab. Then click on the two boxes to the right of where it says `git@github.com:...`. This copies your repo id to your clipboard.
@@ -166,19 +165,19 @@ The instructions in each assignment will remind you what to do:
 
 Open a terminal (it could be the terminal from Linux or you can use the terminal from VS Code by typing **Ctr + Shift + \`**).
 
-``` bash
+```bash
 pwd
 ```
 
 If you aren't already in your `cs112` directory, then do:
 
-``` bash
+```bash
 cd cs112
 ```
 
 Finally, do this command, substituting `<your-github-repo-url-here>` with the URL without the <>s.
 
-``` bash
+```bash
 git clone <your-github-repo-url-here>
 ```
 
@@ -186,19 +185,19 @@ If you get prompted to access the github.com fingerprint, type: yes
 
 When you do this, `git clone <your-github-repo-url-here>` will download your repo to your **cs112** directory, into a directory called **lab0-yourgithubaccount** (where **yourgithubaccount** is actually your github account name).
 
-Read the output from your command. You will notice that it didn't work! In order to use Github with Coder we need to setup something called a SSH public key within Github. Coder has generated one for you, and if you look in your terminal window, you will see a line that looks something like this:
+Read the output from your command. You will notice that it didn't work! In order to use Github with Coder we need to set up something called a SSH public key within Github. Coder has generated one for you, and if you look in your terminal window, you will see a line that looks something like this:
 
-``` bash
+```bash
 ssh-ed25519 AAAAC3NzaC1lZD1235st+gjhagr....
 ```
 
 ### Creating SSH Key Pair
 
-Github security now requires that you use an SSH Key Pair. An SSH key pair is two numbers—a public key and a private key—stored in two files. The public key can be shared publicly, but the private key should not be shared. Coder does this automatically for you.
+Github security now requires that you use an SSH Key Pair. An SSH key pair is two numbers -— a public key and a private key -— stored in two files. The public key can be shared publicly, but the private key should not be shared. Coder does this automatically for you.
 
 You will need to copy the bottom of the output you saw from above into github. To copy that output, select it with your mouse, and either do **Ctrl+Shift+c** or choose **Edit -\> Copy** from the menu. Do that now.
 
-Now, go to your github.com account in the browser. You will need to go to this page [https://github.com/settings/keys](https://github.com/settings/keys) while in your account. (Try clicking on the link, but if that does not work, do the following: in your github.com account page, find the image in the upper-right corner of the page, click on it, then choose *Settings* from the dropdown menu, then choose *SSH and GPG Keys* on the left menu, and click that.)
+Now, go to your github.com account in the browser. You will need to go to this page [https://github.com/settings/keys](https://github.com/settings/keys) while in your account. (Try clicking on the link, but if that does not work, do the following: in your github.com account page, find the image in the upper-right corner of the page, click on it, then choose _Settings_ from the dropdown menu, then choose _SSH and GPG Keys_ on the left menu, and click that.)
 
 Click the **New SSH Key** button in the upper right. Choose a Title: **CS112** works well. Then paste the key you copied earlier into the Key textbox. Click the **Add SSH Key** button.
 
@@ -206,23 +205,23 @@ Click the **New SSH Key** button in the upper right. Choose a Title: **CS112** w
 
 We should be all ready to try our clone attempt again. Return to your terminal and repeat the last command.
 
-``` bash
+```bash
 git clone <your-github-repo-url-here>
 ```
 
 This time is should work correctly. To verify, in the terminal do the following:
 
-``` bash
-ls 
+```bash
+ls
 ```
 
-This will show you the name of the directory containing the **lab0** code.
+This will show you the name of the directory containing the **lab00** code.
 
 `cd` into that directory, using the directory name you saw as the output of the `ls` command:
 
 ```bash
 cd lab-00-<nameofgithubrepo>
-ls 
+ls
 ```
 
 This will show you what files have been installed for you for this lab. Switch back over to your VS Code, and see if you see the lab-00 directory there!
@@ -231,7 +230,7 @@ This will show you what files have been installed for you for this lab. Switch b
 
 VS Code has tons of features. We will configure only a few of them at this point.
 
-First, let's install the C++ extensions. In the menu bar of VS Code, select **File -\> Open Folder**. Choose the directory that you downloaded when you did git clone above. That directory will be under your **cs112** directory. Next, open the **main.cpp** file. When you open that file VS Code is going to suggest (in the lower-right corner) that you install some extensions to help you work with C++ files. The extension that you want to install is called the **C/C++ Extension Pack**. Select that and install it.
+First, let's install the C++ extensions. In the menu bar of VS Code, select **File -\> Open Folder**. Choose the directory that you downloaded when you did **git clone** above. That directory will be under your **cs112** directory. Next, open the **main.cpp** file. When you open that file, VS Code is going to suggest (in the lower-right corner) that you install some extensions to help you work with C++ files. The extension that you want to install is called the **C/C++ Extension Pack**. Select that and install it.
 
 :::{figure} imgs/lab00-InstallCpp.gif
 Installing C/C++ Extension Pack in VS Code
@@ -253,7 +252,7 @@ Under **Extensions**, you should see a **C/C++ section**. Select that, and then 
 
 Scroll down until you see `C_Cpp: Clang_format_style`. Replace whatever you find in the input box with this:
 
-```         
+```
 { BasedOnStyle: Google, IndentWidth: 4, AccessModifierOffset: -4, AllowShortFunctionsOnASingleLine: InlineOnly }
 ```
 
@@ -265,7 +264,7 @@ You can close the Settings window now.
 
 The last step we will take is fixing the red-underlined C++ lines of code. To do this, we need to set the default C++ Intellisense configuration. Do this:
 
-From the "Help" menu, select "Show All Commands" or push the keyboard combo of Ctrl+Shift+P. In the search bar, search for "Select Intellisense Configuration". This should show you something that looks like "C/C++: Select Intellisense Configuration". In the following menu, you will be prompted to select which compiler you want to use. We want to use: Use g++ (found in /usr/bin)
+From the "Help" menu, select "Show All Commands" or push the keyboard combo of Ctrl+Shift+P. In the search bar, search for "Select Intellisense Configuration". This should show you something that looks like **C/C++: Select Intellisense Configuration**. In the following menu, you will be prompted to select which compiler you want to use. We want to use: Use g++ (found in /usr/bin)
 
 After this, you are done!
 
@@ -273,7 +272,7 @@ After this, you are done!
 
 Take a look at your **main.cpp** file. It should look like this:
 
-``` cpp
+```cpp
 /* main.cpp
  * Author: Prof. Victor Norman
  * For: CS 112, Lab 0 at Calvin University.
@@ -297,8 +296,8 @@ To compile your program, type `make`. This command reads your makefile, which gi
 
 To run the executable, in the terminal, type
 
-``` bash
-./lab0  
+```bash
+./lab0
 ```
 
 This is telling the terminal shell to run the lab0 executable that is in this directory.
@@ -308,7 +307,7 @@ This is telling the terminal shell to run the lab0 executable that is in this di
 1.  In **main.cpp**, select all the code and delete it. Then, rewrite the code so that it prints out **Welcome to CS112 and C++!**. Don't cheat! Practice makes perfect. If you can't figure out why you are seeing an error, collaborate with your neighbor. Remember you have to compile your program each time before you try to execute it.
 2.  In your `main()`, define a variable name of type **string**, and initialize it to your name by asking for an input from the keyboard (take a look at the **cin** command in C++). When you run your executable, it will be waiting for you to type your name and hit Enter!
 
-``` cpp
+```cpp
 string name;
 cin >> name;
 ```
@@ -325,19 +324,19 @@ Welcome to CS112 and C++, your name here!
 
 using the variable. To do this, use multiple `<<` operators, similar to this:
 
-``` cpp
+```cpp
 cout << "Welcome" << aVariable << endl;
 ```
 
 Make sure you put the exclamation point on the end. Now, try recompiling and running
 
-``` bash
+```bash
 ./lab0
 ```
 
 3.  Now, create a second file called **utils.cpp** and in there, put this code:
 
-``` cpp
+```cpp
  int courseNumber() {
   return 112;
 }
@@ -345,13 +344,13 @@ Make sure you put the exclamation point on the end. Now, try recompiling and run
 
 Then, create a file called **utils.h** and in there, put this code:
 
-``` cpp
+```cpp
 int courseNumber();
 ```
 
 4.  In your **main.cpp** file, add
 
-``` cpp
+```cpp
 #include "utils.h"
 ```
 
@@ -367,7 +366,7 @@ Compile your project, fix any problems the compiler finds, and run your project.
 
 ## Submitting your Code for Grading
 
-::: {warning}  NOTE NOTE NOTE
+::: {warning} NOTE NOTE NOTE
 
 If you do not submit your code, the grader cannot see it and grade it! Do not forget to do this step!
 :::
@@ -403,24 +402,24 @@ Welcome to CS112 and C++, Amunzle!
 If you have problems, you should go back and fix them, and then resubmit until the automated test passes. When you are done, you are free to go. Be sure to logout from your workstation, so that no one plays any pranks with your account!
 
 ::: {important}
-Add the name of participants of the lab in the *README.md* file from the repo.
+Add the name of participants of the lab in the _README.md_ file from the repo.
 :::
 
 ## Grading Rubric
 
 10 points total
 
--   code compiles and passes autograder tests: 5 pts.
--   code is clean and neat: 2 pts.
--   miscellaneous (see below for examples): 3 pts.
+- code compiles and passes autograder tests: 5 pts.
+- code is clean and neat: 2 pts.
+- miscellaneous (see below for examples): 3 pts.
 
 Ways students have lost points in the past:
 
--   -1: No implementation for `courseNumber()`
--   -1: No call to `courseNumber()` in `main()`
--   -2: No variable to display your name
--   -1: Implementation for `courseNumber()` should be in **utils.cpp**, not the header file **utils.h**.
--   -1: Good, but please format your code!
+- -1: No implementation for `courseNumber()`
+- -1: No call to `courseNumber()` in `main()`
+- -2: No variable to display your name
+- -1: Implementation for `courseNumber()` should be in **utils.cpp**, not the header file **utils.h**.
+- -1: Good, but please format your code!
 
 ```{tip}
 If you ever need to use a public computer to do some last-minute coding, you can use VS Code Web via Coder to do make last minute changes! It is not recommended for day-to-day use, as the VS Code Desktop is MUCH more robust and feature filled.

@@ -21,13 +21,13 @@ Students will be able to...
 
 In this exercise, you will take two time-consuming Matrix operations and "parallelize" them, so that they run faster on a multicore CPU. The operations we will parallelize today are simple ones: Matrix addition, and Matrix tranpose().
 
-[Accept the assignment](https://classroom.github.com/a/YhX08Mui).
+[Accept the assignment](FIX THIS).
 
 ## Coder Reconfiguration
 
 In today's lab, we want to test the effect of multi-core CPUs and parallel programming. Coder allows us to use more CPUs than what probably is configured currently. So before we clone our assignment today, we want to make a configuration change to our Coder workspace.
 
-Log into [https://coder.cs.calvin.edu](https://coder.cs.calvin.edu). Once logged in, find your workspace (hopefully named something like cs112) and click the kebab menu and select Settings. 
+Log into [https://coder.cs.calvin.edu](https://coder.cs.calvin.edu). Once logged in, find your workspace (hopefully named something like cs112) and click the kebab menu and select Settings.
 
 :::{figure} coder-workspace-settings.png
 :::
@@ -37,7 +37,7 @@ From here, navigate to the Parameters tab, and update your CPU cores to 8 and th
 :::{figure} coder-workspace-parameters.png
 :::
 
-Click "Update" and restart the coder workspace as needed. Now you can open up VS Code and connect to Coder as usual. Clone your new repository and move onto the next section. 
+Click "Update" and restart the coder workspace as needed. Now you can open up VS Code and connect to Coder as usual. Clone your new repository and move onto the next section.
 
 ### Matrix Addition
 
@@ -152,9 +152,9 @@ runTimeTrials.cpp
 tests.cpp
 ```
 
-plus a folder named `testFiles` that contains some test matrices. 
+plus a folder named `testFiles` that contains some test matrices.
 
-<!-- 
+<!--
 :::{admonition} IMPORTANT
 :class: warning
 One of these matrices is fairly large (4096 x 4096). This file is compreessed, so you will need to unzip it before using it. The original size of this file is about 100+ MB and it is ignored intentionally in git. Make sure that, after you unzip it, you don't change the `.gitignore` file.
@@ -165,7 +165,7 @@ Note: These files are auto-generated now via make.
 
 Take a few minutes to open the files, look over their contents, to see what they do and how they do it. Once you understand what purpose each file serves, continue.
 
-<!-- 
+<!--
 ## Building
 
 Unlike past exercises, we are going to use a `Makefile` to build the files for today's exercise, to simplify the task of building our multicore application. If you want, open up the `Makefile` and look over its contents. After a series of variable declarations, you should see a series of groups of lines, each with the form:
@@ -248,9 +248,9 @@ We will be adding more values to the spreadsheet, so be sure you label each row 
 
 ## Experiment 1: Using `omp` parallel `for`
 
-There is a rule of thumb in computer science called **The 90-10 Rule**, which states *90% of the time is spent in 10% of the code*. If you think about what happened when you ran `tester`, you can get a sense of this -- the `Matrix` addition operation is a pretty small percentage of the overall code, but the program spent a lot of time there because it is loading and summing two fairly large matrices.
+There is a rule of thumb in computer science called **The 90-10 Rule**, which states _90% of the time is spent in 10% of the code_. If you think about what happened when you ran `tester`, you can get a sense of this -- the `Matrix` addition operation is a pretty small percentage of the overall code, but the program spent a lot of time there because it is loading and summing two fairly large matrices.
 
-Open up `Matrix.cpp` and find the definition of `operator+`. As you can see, this method uses two nested for loops. In `Matrix` addition, each repetition of the outer loop accesses different matrix elements from the other repetitions. This means that the outer loop's repetitions are *independent* -- they can be parallelized across different threads without the threads interfering with one another.
+Open up `Matrix.cpp` and find the definition of `operator+`. As you can see, this method uses two nested for loops. In `Matrix` addition, each repetition of the outer loop accesses different matrix elements from the other repetitions. This means that the outer loop's repetitions are _independent_ -- they can be parallelized across different threads without the threads interfering with one another.
 
 For situations like this -- where a for loop's iterations are independent of one another -- OpenMP provides a special directive:
 
@@ -280,7 +280,7 @@ Matrix Matrix::operator+(const Matrix& mat2) const {
 
 Inserting this directive will cause different threads to perform different iterations of the outer for loop, so that different rows of the Matrix will be summed by different threads. By default, the number of threads is the number of cores on the computer, so on a dual-core computer, 2 threads will be used; on a quad-core computer, 4 threads will be used; and so on.
 
-Use the same approach to "parallelize" the `transpose` operation. With these directives in place, rebuild your program. (Make sure you have saved your file first!) 
+Use the same approach to "parallelize" the `transpose` operation. With these directives in place, rebuild your program. (Make sure you have saved your file first!)
 
 Then rerun `runTimeTrials`. Is the average time for addition very different? What about the average time for `transpose()`?
 
@@ -345,7 +345,7 @@ Our next-to-last experiment is to try replacing the `omp parallel for` directive
 }
 ```
 
-Unlike the `omp parallel for`, which can only be applied to a for loop, the `omp parallel` block  directive is more general, more flexible, and more broadly useful.
+Unlike the `omp parallel for`, which can only be applied to a for loop, the `omp parallel` block directive is more general, more flexible, and more broadly useful.
 
 When execution reaches this directive, OpenMP (by default) spawns new threads so that there is a separate thread for each core in the CPU. Each thread then performs the statements inside the block in parallel:
 
@@ -357,7 +357,7 @@ The master thread is numbered $0$, the first child thread is numbered $1$, the s
 - `omp_get_thread_num()` -- as each thread performs this statement (in parallel), this function returns that thread's number (a different value in each thread).
 - `omp_get_num_threads()` -- this function returns the number of threads that are performing the parallel block (the same value in each thread).
 
-Note that these operations only work this way *inside* the parallel block.
+Note that these operations only work this way _inside_ the parallel block.
 
 The OpenMP parallel block and these functions make it possible to build operations that specify the exact parallel behavior each thread is to perform. To illustrate, we can modify our addition method so that it has the following form:
 
@@ -480,20 +480,22 @@ If you find that your results for an experiment are consistent with those of you
 30 points total
 
 - Code correctness and implementations — 15 pts
-   - 3 pts: Baseline (sequential) addition and transpose pass tests; baseline timing collected.
-   - 3 pts: `#pragma omp parallel for` implemented correctly for addition (no data races, correct results).
-   - 3 pts: `#pragma omp parallel for` implemented correctly for transpose (handles non-sequential access, correct results).
-   - 3 pts: `schedule(dynamic)` and `schedule(dynamic, 2)` variants applied to both operations; builds and runs with timings recorded.
-   - 3 pts: `#pragma omp parallel { ... }` block version implemented for both operations; results correct.
+
+  - 3 pts: Baseline (sequential) addition and transpose pass tests; baseline timing collected.
+  - 3 pts: `#pragma omp parallel for` implemented correctly for addition (no data races, correct results).
+  - 3 pts: `#pragma omp parallel for` implemented correctly for transpose (handles non-sequential access, correct results).
+  - 3 pts: `schedule(dynamic)` and `schedule(dynamic, 2)` variants applied to both operations; builds and runs with timings recorded.
+  - 3 pts: `#pragma omp parallel { ... }` block version implemented for both operations; results correct.
 
 - Experiments and data collection — 8 pts
-   - 4 pts: Time trials run with 10 iterations; averages computed; log file(s) produced for runs and kept with submission or referenced in report.
-   - 4 pts: Thread-scaling experiment using `omp_set_num_threads()` for 1, 2, 4, 8, 16 threads with corresponding times recorded.
+
+  - 4 pts: Time trials run with 10 iterations; averages computed; log file(s) produced for runs and kept with submission or referenced in report.
+  - 4 pts: Thread-scaling experiment using `omp_set_num_threads()` for 1, 2, 4, 8, 16 threads with corresponding times recorded.
 
 - Visualization and analysis — 7 pts
-   - 3 pts: Chart comparing sequential vs parallel (default threads) for addition and transpose, clearly labeled (axes, units, legend/titles).
-   - 2 pts: Chart showing execution time vs. number of threads (1, 2, 4, 8, 16) for both operations, clearly labeled.
-   - 2 pts: Written analysis answers all prompts, compares approaches, and explains observed differences using memory-access patterns and scheduling effects.
+  - 3 pts: Chart comparing sequential vs parallel (default threads) for addition and transpose, clearly labeled (axes, units, legend/titles).
+  - 2 pts: Chart showing execution time vs. number of threads (1, 2, 4, 8, 16) for both operations, clearly labeled.
+  - 2 pts: Written analysis answers all prompts, compares approaches, and explains observed differences using memory-access patterns and scheduling effects.
 
 Common deductions (applied as needed)
 

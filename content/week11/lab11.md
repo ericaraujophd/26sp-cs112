@@ -17,7 +17,7 @@ Today's exercise is to complete a class template named BST from which binary sea
 
 ## Getting Started
 
-Accept the [invitation from github classroom](https://classroom.github.com/a/irkDed9_) and use git clone, as usual.
+Accept the [invitation from github classroom](https://classroom.github.com/a/opfeCSHp) and use git clone, as usual.
 
 Edit the **README.md** file to add both your names and your partner's, and make sure you are in the same Team.
 
@@ -44,12 +44,12 @@ Looking at the code, your BST class provides methods to:
 - Reclaim the dynamic memory of a BST; and
 - Traverse the tree using preorder.
 
-Our next task is to be able to *insert* items into a BST. The `insert(it)` method adds an item it to the tree by storing it in a node such that:
+Our next task is to be able to _insert_ items into a BST. The `insert(it)` method adds an item it to the tree by storing it in a node such that:
 
 - all nodes to the "left" of the node containing it contain items that are less than it; and
 - all nodes to the "right" of the node containing it contain items that are greater than it.
 
-Note that if we use a simple approach to `insert()` in which the first item is stored in the root node, the second item is stored in a child node of the root node, and so on, then the order in which we add items can make a big difference in the shape of the tree. For example, if we insert items in a "carefully chosen random" order: 44, 66, 22, 55, 11, 77, 33, then our tree will be *balanced*:
+Note that if we use a simple approach to `insert()` in which the first item is stored in the root node, the second item is stored in a child node of the root node, and so on, then the order in which we add items can make a big difference in the shape of the tree. For example, if we insert items in a "carefully chosen random" order: 44, 66, 22, 55, 11, 77, 33, then our tree will be _balanced_:
 
 ```{figure} lab11-tree01.png
 ---
@@ -60,13 +60,13 @@ Balanced tree after inserting 44, 66, 22, 55, 11, 77, 33
 
 A tree's shape can be characterized in different ways. One way is by comparing its height, diameter, and maximum width:
 
-- A tree's *height* is the number of nodes on the longest path from the root node to any of the leaf nodes.
-- A tree's *diameter* is the number of nodes on the longest path between any two leaves in the tree. This path often includes the root node, but not necessarily.
-- A tree's *maximum width* is the largest number of nodes on any given level of the tree.
+- A tree's _height_ is the number of nodes on the longest path from the root node to any of the leaf nodes.
+- A tree's _diameter_ is the number of nodes on the longest path between any two leaves in the tree. This path often includes the root node, but not necessarily.
+- A tree's _maximum width_ is the largest number of nodes on any given level of the tree.
 
-The preceding tree's height is 3, its diameter is 5, and its maximum width is 4. If a binary search tree is *balanced*, then its height should be about $log_2(n)$, where $n$ is the number of items in the tree.
+The preceding tree's height is 3, its diameter is 5, and its maximum width is 4. If a binary search tree is _balanced_, then its height should be about $log_2(n)$, where $n$ is the number of items in the tree.
 
-By contrast, if we insert items in *ascending* order: 11, 22, 33, 44, 55, 66, 77, then our tree will be imbalanced one way:
+By contrast, if we insert items in _ascending_ order: 11, 22, 33, 44, 55, 66, 77, then our tree will be imbalanced one way:
 
 ```{figure} lab11-tree02.png
 ---
@@ -92,14 +92,15 @@ In **tests.cpp**, uncomment the `TEST_CASE` for "insert()". Save/compile, and ve
 
 <!-- Add a prototype of `insert()` to our BST class; then recompile and verify that only a linking error remains. -->
 
-In **BST.h**, below the class declaration, create a stub for `BST::insert()` (a "stub" is code that does nothing -- it just returns) and a stub for `BST::Node::insert()`. Recompile, and when all errors have been eliminated, run the test. Then define both `BST::insert()` and `BST::Node::insert()` so that it passes the test. 
+In **BST.h**, below the class declaration, create a stub for `BST::insert()` (a "stub" is code that does nothing -- it just returns) and a stub for `BST::Node::insert()`. Recompile, and when all errors have been eliminated, run the test. Then define both `BST::insert()` and `BST::Node::insert()` so that it passes the test.
 
 You will need to define insert functions in both the BST class, and additionally within the Node struct within the BST class. Both will look the same!
-``` cpp
+
+```cpp
 void insert(const Item& it);
 ```
 
-Do your best to implement these two insert functions. The job of the `BST::insert()` function is to setup the Node tree if it doesn't exist by making the initial node, and if the Node tree does exist, it needs to pass-the-buck to the `BST::Node::insert()` function to deal with it recursively. It additionally counts how many items are in the tree. 
+Do your best to implement these two insert functions. The job of the `BST::insert()` function is to setup the Node tree if it doesn't exist by making the initial node, and if the Node tree does exist, it needs to pass-the-buck to the `BST::Node::insert()` function to deal with it recursively. It additionally counts how many items are in the tree.
 
 The `BST::Node::insert()` function needs to correctly insert the new `Item it` into the pre-existing Node tree recursively - checking whether it needs to be inserted correctly to the left (less than) or to the right (greater than). Our BST does not need to deal with duplicates! If a duplicate is given, we need to throw an Exception back. We have provided an Exception.h file to use for this. Once the item is recursively `insert()` to the place in the tree where it can be added (ie, a blank nullptr for left or right) then it will make and attach a new `Node(it)` to the tree and return.
 
@@ -107,12 +108,13 @@ If you need more help than what is provided here, there is a [hint](lab11-hint.m
 
 ## The contains() Method
 
-In **tests.cpp**, uncomment the `TEST_CASE` for `contains()`. Take a few minutes to look over the tests it contains, specifically how `contains()` is used. As can be seen, the `contains(it)` method returns *true* if it is in its BST; otherwise it returns false. Save/compile your project. You should see an error indicating that there is no method matching the calls in our test-method.
+In **tests.cpp**, uncomment the `TEST_CASE` for `contains()`. Take a few minutes to look over the tests it contains, specifically how `contains()` is used. As can be seen, the `contains(it)` method returns _true_ if it is in its BST; otherwise it returns false. Save/compile your project. You should see an error indicating that there is no method matching the calls in our test-method.
 
 Modify **BST.h** as necessary to fix any compilation/linking errors, using an approach similar to the approach used in `insert()`.
 
 You will need to define contains functions in both the BST class, and additionally within the Node struct within the BST class. Both will look the same!
-``` cpp
+
+```cpp
 bool contains(const Item& it) const;
 ```
 
@@ -132,7 +134,7 @@ When it comes to binary search trees, there are a variety of ways to traverse a 
 
 To illustrate, the BST class template contains a `traversePreorder()` method, defined as follows:
 
-``` cpp
+```cpp
 void BST::traversePreorder(ostream &out) const {
     if (!isEmpty()) {
     myRoot->traversePreorder(ostream &out);
@@ -142,7 +144,7 @@ void BST::traversePreorder(ostream &out) const {
 
 If the BST is not empty, this method "passes the buck" by sending the `traversePreorder()` message to the node whose address is in `myRoot`. The Node struct defines that (recursive) method as follows:
 
-``` cpp
+```cpp
 void BST::Node::traversePreorder(ostream &out) const {
     // 1. process myItem first (preorder)
     processItem(out);
@@ -159,7 +161,7 @@ void BST::Node::traversePreorder(ostream &out) const {
 
 The `processItem()` method can be defined to do any kind of processing of a node's item. To illustrate, our Node struct defines `processItem()` to insert a space and then `myItem` into `cout`:
 
-``` cpp
+```cpp
 void BST::Node::processItem(ostream &out) {
     out << myItem << ' ';
   }
@@ -191,4 +193,4 @@ Ways students lost points in the past:
 - -1: `insert()` should throw an exception when item is already in tree
 - -2: very poor indentation
 - -2: `traversePostorder` and `traverseInorder` should call themselves, not traversePreorder
-- -2: `Node::traverseInOrder` needs to process item in the *middle* (and use `processItem` method) insert
+- -2: `Node::traverseInOrder` needs to process item in the _middle_ (and use `processItem` method) insert

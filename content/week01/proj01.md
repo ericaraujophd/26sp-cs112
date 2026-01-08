@@ -11,7 +11,7 @@ subtitle: More Control Structures
 
 ## Step 0. Prepare
 
-1. Click [this link](https://classroom.github.com/a/30w1YURj) and then "Accept this assignment".
+1. Click [this link](https://classroom.github.com/a/jzY3a4_d) and then "Accept this assignment".
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
@@ -38,7 +38,7 @@ In **tests.cpp**, in the `TEST_CASE("step1")`, add more `REQUIRES()` function ca
 
 Compile using `make`. Then, run like this:
 
-``` bash
+```bash
 ./tester step1
 ```
 

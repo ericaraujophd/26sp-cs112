@@ -12,7 +12,7 @@ In this exercise, you will:
 
 ## Introduction
 
-You should know how to [get the assignment](https://classroom.github.com/a/i4V0aHpY). So, do it.
+You should know how to [get the assignment](https://classroom.github.com/a/jeT134Lz). So, do it.
 
 ```{important}
 Don't forget to make sure you and your partner are in the same Team! Also edit the README.md file and put both of your names and emails in the file.
@@ -107,10 +107,10 @@ Put the above code in your **.cpp** file, and add a prototype for this construct
 
 1. Set `mySize` to `size`
 2. If `size` is positive (greater than zero):
-    - Dynamically allocate an array of size values of type `Item`, and store the address of the array in `myArray`; and
-    - Set each of the `Items` in that array to zero.
+   - Dynamically allocate an array of size values of type `Item`, and store the address of the array in `myArray`; and
+   - Set each of the `Items` in that array to zero.
 3. Otherwise:
-    - Set `myArray` to `nullptr`.
+   - Set `myArray` to `nullptr`.
 
 Continue when your class passes all tests (2 assertions in 9 test cases).
 
@@ -188,8 +188,8 @@ Add the code above to the .cpp file. Then, add a prototype to the Vec class, and
 
 1. Set `mySize` to the `size` of original
 2. If `original.mySize` is greater than zero:
-    1. Dynamically allocate an array of `mySize` values of type `Item`, and store the address of the array in `myArray`.
-    2. Set each item `i` in the new array to item `i` from original.
+   1. Dynamically allocate an array of `mySize` values of type `Item`, and store the address of the array in `myArray`.
+   2. Set each item `i` in the new array to item `i` from original.
 3. Otherwise, set `myArray` to `nullptr`.
 
 Continue when your constructor passes all tests. (I am now seeing 42 assertions in 9 test cases passing.)

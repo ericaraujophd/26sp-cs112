@@ -5,7 +5,7 @@ subtitle: Classes
 
 ## Part 0. Prepare
 
-1. Click this [link](https://classroom.github.com/a/-AfU3cG-) and then "Accept this assignment". Make sure you and your partner are in the **same Team**. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.
+1. Click this [link](https://classroom.github.com/a/8Ag1LlMI) and then "Accept this assignment". Make sure you and your partner are in the **same Team**. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button and copy the SSH link it shows.
@@ -24,12 +24,13 @@ We will create a class to represent a Student. You probably have not created a c
 
 The instance variables for a Student will be:
 
-| Instance Variable Name | Type         | Default value | Notes                                                                  |
-|------------------------|--------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| myName                 | string       | ""            | Immutable (NOTE: this **is not** a const in our class, but we will **not** be making setter functions for these immutable values.)        |
-| myId                   | unsigned int | 0             | Immutable (NOTE: this **is not** a const in our class, but we will **not** be making setter functions for these immutable values.)        |
-| myGpa                  | float        | 0.0           |                                                                                                                                              |
-| myMajor                | string       | "Undecided"   |                                                                                                                                              |
+| Instance Variable Name | Type         | Default value | Notes                                                                                                                              |
+| ---------------------- | ------------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| myName                 | string       | ""            | Immutable (NOTE: this **is not** a const in our class, but we will **not** be making setter functions for these immutable values.) |
+| myId                   | unsigned int | 0             | Immutable (NOTE: this **is not** a const in our class, but we will **not** be making setter functions for these immutable values.) |
+| myGpa                  | float        | 0.0           |                                                                                                                                    |
+| myMajor                | string       | "Undecided"   |                                                                                                                                    |
+
 In **Student.h**, you should see the definition of the `Student` class. In that class, create the **private:** section, and in there define the 4 instance variables, shown in the table above. You'll have to `#include <string>` and do the using `namespace` business...
 
 Compile (type: `make tester`) and fix any errors. (You may see warnings -- you can ignore those for now.)
@@ -40,7 +41,7 @@ In **Student.h** define the default constructor (in the **public:** section). In
 Compile and fix any errors!
 ```
 
-### Step 2. Create *getters*
+### Step 2. Create _getters_
 
 In your **tests.cpp**, you'll find the first `SECTION` of unit tests called "student getters", within the `TEST_CASE` "Student class". Uncomment the first `SECTION`, so that the code to construct a Student object and then test `getMajor()` runs.
 
@@ -62,12 +63,12 @@ That is, create tests for the getters and then implement them according to the i
 Don't delete any old tests -- just keep adding more. Put each test in its own `SECTION` within the "Student class" TEST_CASE.
 ```
 
-### Step 3. Create *setters*
+### Step 3. Create _setters_
 
 For the instance variables that are mutable (see the table above), create setter methods. But first, for each, create a test. Put all of these tests in a new `SECTION` within the "Student class" `TEST_CASE`.
 
 ```{tip} Example
-For the `setGpa` test, set the student's gpa to 3.25, then in a REQUIRE statement, call `getGpa()` and make sure the value is 3.25. Make sure the return type for your setters are `void`. 
+For the `setGpa` test, set the student's gpa to 3.25, then in a REQUIRE statement, call `getGpa()` and make sure the value is 3.25. Make sure the return type for your setters are `void`.
 ```
 
 ### Step 4. Create an explicit-value constructor
@@ -170,7 +171,7 @@ SECTION("setDenominator") {
 }
 ```
 
-### Step 6. Display as a *string*
+### Step 6. Display as a _string_
 
 Create a test to call `asString()` on a Fraction object: If you create a new Fraction object `newFrac` and call `newFrac.asString()`, you can `REQUIRE` that the result should be "0/1". Initially, this test will fail, so create the method, which returns a string. This function will be a const function - it will not change any of our private variables. Make sure to define it as `string asString() const`.
 
@@ -192,7 +193,7 @@ This lab is worth 20 pts:
 
 - 10 points for each of Part 1 and Part 2: 20 pts
   - 6 pts for correctness
-  - 1 pt for perfect indentation and good variable names, function names, and comments (i.e., hospitable code). You should write a comment in your code only when the following block of code is not *obvious* to the trained reader. You should not write a comment for each line of code.
+  - 1 pt for perfect indentation and good variable names, function names, and comments (i.e., hospitable code). You should write a comment in your code only when the following block of code is not _obvious_ to the trained reader. You should not write a comment for each line of code.
   - 3 pts for sufficient test cases to prove that the code is correct.
 
 Ways students have lost points in the past:

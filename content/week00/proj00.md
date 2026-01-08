@@ -17,7 +17,7 @@ Practice creating variables, printing values, printing locations of variables, a
 
 ## 1. Setup
 
-1. Click on this assignment invitation and then ["Accept this assignment"](https://classroom.github.com/a/K17ETY7L).
+1. Click on this assignment invitation and then ["Accept this assignment"](https://classroom.github.com/a/JmVHN27P).
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!".
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button, then SSH, and copy the link it shows.
@@ -66,7 +66,7 @@ If you get a weird answer for when you print out the location of the char variab
 
 ## 4. Number Systems
 
-1. In `ns()`, write code to initialize a variable of type *int* to the value **37**.
+1. In `ns()`, write code to initialize a variable of type _int_ to the value **37**.
 2. Write code to print out the value of that variable in decimal, octal, and hexadecimal, each on its own separate line. You will have to google how to do this in C++.
 3. Compile and then test your output by running
 

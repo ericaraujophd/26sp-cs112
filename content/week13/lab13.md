@@ -20,7 +20,7 @@ This lab/project has you creating a simple database of movies and the actors in 
 3. Show all movies an actor was in.
 4. The main data structure you'll create is an STL map that maps:
 
-``` default
+```default
 movie name → set of actors in the movie.
 ```
 
@@ -28,7 +28,7 @@ This is a complex data structure: each entry in the map contains a set (Thus, we
 
 We'll use the Bridges database of movie information. When you get the information from the [Bridges API](https://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1dataset_1_1_movie_actor_wikidata.html), you get a vector of objects of type `MovieActorWikidata`. Each object contains a movie and an actor in the movie (among other things). If you printed out those two things from `MovieActorWikidata` objects, you might see these values.
 
-``` default
+```default
 Movie: Young at Heart         Actor: Alan Hale, Jr.
 Movie: Wichita                Actor: Carl Benton Reid
 Movie: We're No Angels        Actor: Aldo Ray
@@ -43,7 +43,7 @@ Note that sometimes an actor is listed multiple times for a movie. But, because 
 
 ## Menu
 
-The application presents a menu from which the user can select the operation s/he wishes to perform. To validate a user's menu-choice, our project uses a tree-based data structure — the `STL set`. For example, if the valid menu choices are *a*, *b*, *c*, *d*, *e*, *f*, and *q*, and we store these choices in a set named `myValidChoices`, then we might (simplistically) visualize this set as follows:
+The application presents a menu from which the user can select the operation s/he wishes to perform. To validate a user's menu-choice, our project uses a tree-based data structure — the `STL set`. For example, if the valid menu choices are _a_, _b_, _c_, _d_, _e_, _f_, and _q_, and we store these choices in a set named `myValidChoices`, then we might (simplistically) visualize this set as follows:
 
 ```{figure} lab13-bst.png
 ---
@@ -52,13 +52,13 @@ lab13-bst
 BST for the menu
 ```
 
-To determine whether or not a character is present in this set, the STL `find(value)` method does a binary search down through this tree until it either locates value, or reaches the bottom of the tree. It should be evident that the maximum time to search is *O(lg(n))*, where *n* is the number of items in the set.
+To determine whether or not a character is present in this set, the STL `find(value)` method does a binary search down through this tree until it either locates value, or reaches the bottom of the tree. It should be evident that the maximum time to search is _O(lg(n))_, where _n_ is the number of items in the set.
 
 The exercise will provide you with a "skeleton" application, which you will then complete by adding additional functionality.
 
 ## Getting Started
 
-Accept the [invitation from github classroom](https://classroom.github.com/a/FR0fsGcT) and use git clone, as usual. Make sure you and your partner are in the same Team.
+Accept the [invitation from github classroom](https://classroom.github.com/a/ZXv3T7KF) and use git clone, as usual. Make sure you and your partner are in the same Team.
 
 Edit the **README.md** file to add both your names and your partner's.
 
@@ -70,7 +70,7 @@ One way to detect such a problem is to build a **Menu class** that, besides "rem
 
 As you can see, our Menu class contains two instance variables in Menu.h: a string storing the menu, and a set to store those menu choices that are valid:
 
-``` cpp
+```cpp
 string myValue;             // the menu that is displayed
 set<char> myValidChoices;   // the valid menu choices
 ```
@@ -79,7 +79,7 @@ set<char> myValidChoices;   // the valid menu choices
 
 The Menu constructor currently initializes our `myValue` member; it must also initialize `myValidChoices` so that it stores the valid menu choices. To do so, we can use the `insert()` method:
 
-``` cpp
+```cpp
 setVariable.insert(value);
 ```
 
@@ -99,7 +99,7 @@ Save/compile your project, and when it is free of compilation errors, run the pr
 
 When you run your program, you will need to provide your Bridges UserName and Id on the command line: e.g.,
 
-``` bash
+```bash
 ./movies CS112StudentUsingBridges 123555666
 ```
 
@@ -107,10 +107,11 @@ When you run your program, you will need to provide your Bridges UserName and Id
 
 The file **App.h** contains the declaration of class App. This class uses an STL map to store (movieName, set of actors) pairs:
 
-``` cpp
+```cpp
 map<string, set<string>> movies_by_name;   // key is movie name; value is set of actors' names.
 ```
-<!-- 2025-12-01 cwieri39 - removed this section as it makes it MORE difficult to understand and not less difficult 
+
+<!-- 2025-12-01 cwieri39 - removed this section as it makes it MORE difficult to understand and not less difficult
 Note that the code actually reads like this:
 
 ``` cpp
@@ -127,6 +128,7 @@ typedef map<string, set<string>>::iterator db_iter;
 Now, the code can use `db_type` and `db_iter` instead of `map<string, set<string>>` and `map<string, set<string>>::iterator`, respectively. So much easier to type!
 
 -->
+
 You may find that it is useful to have [documentation](https://cplusplus.com/reference/map/map/) for the STL map pulled up!
 
 ### Constructor
@@ -147,7 +149,7 @@ You might find it very useful to make the inner loop a separate function. I call
 
 When you think your code is correct (for this and the previous step), try loading all movies from 1955 (and only 1955) and printing them all out. The first movie should be:
 
-``` default
+```default
 Movie:  5 Against the House
         Alvy Moore
         Brian Keith
@@ -167,7 +169,7 @@ Movie:  5 Against the House
 
 The last movie you should see should look like this:
 
-``` default
+```default
 Movie:  Young at Heart
         Alan Hale, Jr.
         Doris Day
@@ -187,7 +189,7 @@ Complete the code in the `getMovienameAndShowActors()` method. If you created a 
 
 Here are some sample outputs:
 
-``` default
+```default
 Enter a movie name to see the list of actors: The Rawhide Years
      Arthur Kennedy
      Chubby Johnson
@@ -197,7 +199,7 @@ Enter a movie name to see the list of actors: The Rawhide Years
      ...
 ```
 
-``` default
+```default
 Enter a movie name to see the list of actors: The Matrix
 The Matrix was not found!
 ```
@@ -208,14 +210,14 @@ Finally, implement this option. Create a set of strings (I called my variable `m
 
 Here are some sample outputs:
 
-``` default
+```default
 Enter an actor name to show all movies for that actor: Alfred Hitchcock
 Rear Window
 The Trouble with Harry
 To Catch a Thief
 ```
 
-``` default
+```default
 Enter an actor name to show all movies for that actor: Linux Torvalds
 Linus Torvalds was not found!
 ```
@@ -228,7 +230,7 @@ Submit your project to github as usual. If you worked with your lab partner on t
 
 There is an automated grader for this lab. You can run it locally to make sure everything is passing before submitting it to Github. To do so, run the command:
 
-``` bash
+```bash
 make test
 ```
 

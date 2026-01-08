@@ -18,7 +18,7 @@ To log in to ChatGPT (as if you didn't already know :-), go to [https://chatgpt.
 
 After the AI generates C++ code, copy and paste it into a file, and compile and run it. You will be submitting multiple files each containing a `main()` in it.
 
-[Accept the assignment](https://classroom.github.com/a/OuAcJcfx).
+[Accept the assignment](https://classroom.github.com/a/EQo-iiMU).
 
 ## Part 1: Reverse an array, recursively
 
@@ -52,7 +52,7 @@ Describe in a comment in the file why this solution is slightly more efficient.
 
 ## Part 4: Fibonacci sequence, recursively
 
-Ask the AI to generate C++ code to compute recursively the *nth* fibonacci number, where the user provides the value for $n$. Copy and paste the code into file **fib.cpp**. Then, compile and run the code. Verify that the results are correct (you can ask the AI for the correct answer when $n$ is 20).
+Ask the AI to generate C++ code to compute recursively the _nth_ fibonacci number, where the user provides the value for $n$. Copy and paste the code into file **fib.cpp**. Then, compile and run the code. Verify that the results are correct (you can ask the AI for the correct answer when $n$ is 20).
 
 Ask the AI to modify the C++ code so that it counts how many times the recursive function is called and prints out the results at the end.
 
