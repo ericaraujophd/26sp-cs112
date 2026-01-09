@@ -14,7 +14,7 @@ subtitle: More Vec Operations
 
 ```
 
-1. [Click the link](FIX THIS!!!) and then "Accept this assignment".
+1. [Click this link](https://classroom.github.com/a/oYu5npVW) and then "Accept this assignment".
    - Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
    - Click the link to see your new repo on github.com.
    - Click the green <span style="color: green;">Code</span> button and copy the link it shows.
