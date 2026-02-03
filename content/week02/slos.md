@@ -25,9 +25,9 @@ At the end of this unit, students will be able to...
 ## Assignments
 
 ```{attention} Lab 02: File I/O, Control Structures, and the Debugger
-📄 [Instructions](/labs/lab02.md)
+📄 [Instructions](lab02.md)
 ```
 
 ```{caution} Project 02: Falling Sand Simulator
-📄 [Instructions](/projects/proj02.md)
+📄 [Instructions](proj02.md)
 ```
