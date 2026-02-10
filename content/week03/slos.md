@@ -16,7 +16,7 @@ Students will be able to:
 
 ```{note} Resources
 - 📜 [Week 03 Slides](https://docs.google.com/presentation/d/1MHIPb67PUzT9cdGHwnfcYBP5MlFd6_wg44jWBtG3UGc/edit#slide=id.p)
-- 💻 [Pair class code](https://calvincollege-my.sharepoint.com/:f:/g/personal/vtn2_calvin_edu/EqWAkf_d_K9LhEMlAuJ6ibUBYDWKLhX2GuafwPg2AJWC3Q?e=YRLb30)
+- 💻 [Pair class code](https://github.com/ericaraujophd/25fa-cs112-live-coding/tree/main/25fa-cs112A-class-codes/week03/A)
 ```
 
 ## Assignments
