@@ -19,7 +19,7 @@ Students will be able to...
 
 ```{note} Resources
 - 📜 [Week 04 Slides](https://docs.google.com/presentation/d/1drjTrJ0TrHNiqr7g0B_HxnN6MwswAR7SRWENpsPyLJw/edit?usp=sharing)
-- 💻 [PyList Code from Class](https://calvincollege-my.sharepoint.com/:f:/g/personal/vtn2_calvin_edu/EoRYFIHTpTxErwVcMdai1SwBggbbI0-M2rgAEgne1XreBQ)
+- 💻 [PyList Code from Class](https://github.com/ericaraujophd/25fa-cs112-live-coding/tree/main/25fa/week04/PyListA)
 ```
 
 ## Assignments

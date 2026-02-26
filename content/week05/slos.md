@@ -17,7 +17,6 @@ By the end of this unit, students will be able to...
 
 ```{note} Resources
 - 📜 [Week 05 Slides](https://docs.google.com/presentation/d/19Dyq-ocaGfhTA623PzKYofXuDHr-gz8eRP19zv65Mu0/edit?usp=sharing)
-- 💻 [Code from Class](https://calvincollege-my.sharepoint.com/:f:/g/personal/vtn2_calvin_edu/Eredz2bHiShCtI0CVssiaggB8tUES6QbacEf2cc4PBhTgQ?e=uoV7Uu)
 ```
 
 ## Assignments

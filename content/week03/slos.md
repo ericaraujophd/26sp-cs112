@@ -16,7 +16,7 @@ Students will be able to:
 
 ```{note} Resources
 - 📜 [Week 03 Slides](https://docs.google.com/presentation/d/1MHIPb67PUzT9cdGHwnfcYBP5MlFd6_wg44jWBtG3UGc/edit#slide=id.p)
-- 💻 [Pair class code](https://github.com/ericaraujophd/25fa-cs112-live-coding/tree/main/25fa-cs112A-class-codes/week03/A)
+- 💻 [Pair class code](https://github.com/ericaraujophd/25fa-cs112-live-coding/tree/main/25fa/week03/A)
 ```
 
 ## Assignments
