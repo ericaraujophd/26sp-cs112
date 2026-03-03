@@ -90,8 +90,8 @@ The readings for this course are from [C++ for Python Programmers Book](https://
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">7</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">16 Mar</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Algorithm Analysis and Big-Oh</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
-      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">❌</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
       <td style="border: 1px solid #ddd; padding: 8px;">Search calvin.edu for "Exam Schedule" to find the time of the exam (and all exams you have, this semester, and all future semesters).</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"></td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 5 Cumulative, during exam time (You may take it in either class's exam time. Classes met at 12.15pm MWF and 1:30pm MWF.)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">💯 Test 5 Cumulative, during exam time (You may take it in either class's exam time. Classes met at 11:00am MWF and 12:15pm MWF.)</td>
     </tr>
   </tbody>
 </table>
