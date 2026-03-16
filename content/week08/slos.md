@@ -13,9 +13,8 @@ By the end of this unit, students will be able to...
 - defend the argument that Big-Oh notation is a description of the carbon footprint of an algorithm, and thus, using better algorithms is a way for Christians to care for the earth.
 - draw the lines/curves of typical Big-Oh values on a graph.
 
-
 ```{note} Resources
-- 📜 [Week 08 Slides — Big Oh Notation](https://calvincollege-my.sharepoint.com/:p:/g/personal/vtn2_calvin_edu/EVUHPdmKVURIiLt6RGsWGUgBMWUBvWAUeP3IdaHpoNjQVg?e=BRbwiB)
+- 📜 [Week 08 Slides — Big Oh Notation](https://docs.google.com/presentation/d/18J2weeLUwXRyu7m4VwDeDMddWcen3zOYKXb0nDJWh3s/edit?usp=sharing)
 - 🎥 [Videos](https://www.youtube.com/playlist?list=PLgbz05MfsB26udu5rHnVUVY3I3Nlmynmu)
 ```
 
