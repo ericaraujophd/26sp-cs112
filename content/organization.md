@@ -108,7 +108,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
       <td style="border: 1px solid #ddd; padding: 8px;">Recursion; BSTs</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Good Friday on F</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">10</td>
@@ -116,7 +116,7 @@ The readings for this course are from [C++ for Python Programmers Book](https://
       <td style="border: 1px solid #ddd; padding: 8px;">BSTs</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">✅</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Good Friday on F; 💯 Test 3: Weeks 0 - 9, Wednesday</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"> 💯 Test 3: Weeks 0 - 9, Wednesday</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">11</td>
