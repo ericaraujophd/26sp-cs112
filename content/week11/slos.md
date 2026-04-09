@@ -25,9 +25,9 @@ At the end of this unit, students will be able to...
 ## Assignments
 
 ```{attention} Lab 11: Binary Search Trees
-📄 [Instructions](/labs/lab11.qmd)
+📄 [Instructions](lab11.md)
 ```
 
 ```{caution} Project 11: Binary Search Trees
-📄 [Instructions](/projects/proj11.qmd)
+📄 [Instructions](proj11.md)
 ```
