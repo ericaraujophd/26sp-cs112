@@ -31,6 +31,8 @@ By the end of this unit, the student will be able to...
 
 ## Assignments
 
-```{attention} Lab 12: Matrix Operations
-📄 [Instructions](lab12.md)
+```{attention} Lab 12: Parsing Cat Genome Quickly
+Get your repo here: https://classroom.github.com/a/1IlbpAM2
+
+📄 [Instructions](https://cs.calvin.edu/courses/cs/112/adams/labs/genScan/)
 ```
