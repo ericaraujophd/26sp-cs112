@@ -19,14 +19,14 @@ At the end of this unit, students will be able to...
     - identify the time complexity of Insertion and Selection sort in best and worst cases.
 
 ```{note} Resources
-- 📜 [Slides - Hash Tables](https://calvincollege-my.sharepoint.com/:p:/g/personal/vtn2_calvin_edu/EaCjYGAo6VBBrf55UKfcutAB4UsUT03-Ik7egbfJOB0_PQ?e=U7yIYO)
+- 📜 [Slides - Hash Tables](https://docs.google.com/presentation/d/1v1TFoR93b1023c0UnAhAHuBHfmgvn2nOzPcFvGSEhW4/edit?usp=sharing)
 - 📜 [Slides - Sorting Algorithms](https://docs.google.com/presentation/d/1H8e0eAfmzyISfkwiURrIYJkz-hvlqen8r4tZder2KnE/edit?usp=sharing)
 ```
 
 ## Assignments
 
 ```{attention} Lab 14: Hash Tables
-🧪 [Instructions](/labs/lab14.qmd)
+🧪 [Instructions](lab14.md)
 ```
 
 ```{important} Final Exam

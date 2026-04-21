@@ -24,7 +24,7 @@ At the end of this unit, students will be able to...
 ## Assignments
 
 ```{attention} Lab 13: The STL set and map Containers
-🧪 [Instructions](/labs/lab13.qmd)
+🧪 [Instructions](lab13.md)
 ```
 
 ```{important} Exam 4
