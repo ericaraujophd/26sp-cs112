@@ -18,6 +18,7 @@ At the end of this unit, students will be able to...
 - write code using iterators to traverse all items in a map.
 
 ```{note} Resources
+- 📜 [Worksheet exercise](https://docs.google.com/document/d/1XK73Dq7EuZJ0F6FzbEx8pIBn2mcAmr3-PrKutATPZDc/edit?usp=sharing)
 - 📜 [Slides - STL set and map Containers](https://docs.google.com/presentation/d/1AtO1BnVb8WHNWg6ZYGCGav6y5zPqSPF8G5r-9VQbgLo/edit?usp=sharing)
 ```
 
